@@ -90,6 +90,52 @@
 
 ---
 
+## 📘 Playbook / Lead Magnet (Future Project)
+
+**Asset:** "The 2026 Lending Modernization Playbook"
+*How Community Banks & Credit Unions Modernize Abrigo/Sageworks, AI Workflows, and Lending Operations Without Replacing Their Core*
+
+### Strategy
+- Use as a **free lead magnet** (not paid) — email + title required to download
+- Builds the consulting funnel: PDF → email sequence → discovery call
+- Designed to look like Gartner/McKinsey — not SMB marketing
+
+### Recommended Structure (20–30 pages)
+1. The Banking Technology Shift (urgency)
+2. Hidden Problems Inside Most Abrigo Environments (establishes authority)
+3. What High-Performing Institutions Do Differently
+4. The 5-Pillar Modernization Framework (signature IP)
+   - Pillar 1: Workflow Optimization
+   - Pillar 2: AI Enablement
+   - Pillar 3: Integration Modernization
+   - Pillar 4: Operational Governance
+   - Pillar 5: Executive Visibility & Analytics
+5. AI Use Cases Banks Can Deploy Today
+6. Executive Readiness Scorecard (15–20 questions, score-based maturity model)
+7. CTA: Schedule a Lending Modernization Assessment
+
+### Website Funnel
+- Homepage CTA: "Download the 2026 Lending Modernization Playbook"
+- Gate with: Name / Institution / Email / Title
+- Follow-up: automated email sequence → consultation funnel
+
+### Future PDF Ideas (could sell or gate)
+- "AI in Community Banking" — governance + deployment guide
+- "Abrigo Optimization Blueprint" — highly niche, high conversion
+- "The Executive Guide to Lending Automation"
+- "API-First Banking Architecture" — CIO-focused
+- "The Future of Agentic AI in Lending" — thought leadership
+
+### What We Need to Build This
+- [ ] Full PDF outline + page-by-page copy
+- [ ] Diagrams: maturity models, architecture visuals, AI workflow graphics
+- [ ] Cover design (navy/gold, enterprise aesthetic)
+- [ ] Landing page on site with email gate
+- [ ] Email follow-up sequence (3–5 emails)
+- [ ] LinkedIn lead funnel copy
+
+---
+
 ## 📌 Where to Post on Launch
 | Platform | Content |
 |----------|---------|
