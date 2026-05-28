@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abrigo &amp; Sageworks Consulting | Advanedge</title>
+<meta name="description" content="Operator-level Abrigo and Sageworks expertise for community banks and credit unions. LOS implementation recovery, workflow redesign, decision model optimization, and Jack Henry integration." />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://advanedgeconsulting.com/services/abrigo-sageworks.html" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Advanedge Consulting" />
+<meta property="og:url" content="https://advanedgeconsulting.com/services/abrigo-sageworks.html" />
+<meta property="og:title" content="Abrigo &amp; Sageworks Consulting | Advanedge" />
+<meta property="og:description" content="Operator-level Abrigo and Sageworks expertise for community banks and credit unions. LOS recovery, workflow redesign, decision optimization, and core integration." />
+<meta property="og:image" content="https://advanedgeconsulting.com/assets/images/og-fintech.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Abrigo &amp; Sageworks Consulting | Advanedge" />
+<meta name="twitter:description" content="Operator-level Abrigo expertise for community banks and credit unions." />
+<meta name="twitter:image" content="https://advanedgeconsulting.com/assets/images/og-fintech.png" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+<!-- Global styles -->
+<link rel="stylesheet" href="../css/styles.css" />
+
+<!-- Page-specific styles -->
+<style>
+  :root {
+    --navy: #0A1628;
+    --gold: #C9A84C;
+    --white: #FFFFFF;
+    --ink: #1a2438;
+    --paper: #FAF8F4;
+    --muted: #6b7280;
+    --line: rgba(10, 22, 40, 0.08);
+  }
+
+  .ab-wrap {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  /* HERO — editorial split layout */
+  .ab-hero {
+    background: var(--navy);
+    color: var(--white);
+    padding: 7rem 2rem 6rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .ab-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 85% 20%, rgba(201, 168, 76, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 15% 80%, rgba(201, 168, 76, 0.05) 0%, transparent 40%);
+    pointer-events: none;
+  }
+  .ab-hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 860px) {
+    .ab-hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+  }
+  .ab-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+  }
+  .ab-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 4.2vw, 3.4rem);
+    line-height: 1.1;
+    margin: 0 0 1.5rem;
+  }
+  .ab-hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .ab-hero p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0 0 2rem;
+  }
+  .ab-hero-stats {
+    border-left: 2px solid var(--gold);
+    padding-left: 2rem;
+  }
+  .ab-stat {
+    margin-bottom: 2rem;
+  }
+  .ab-stat:last-child { margin-bottom: 0; }
+  .ab-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+  .ab-stat-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  /* Buttons */
+  .btn-gold {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 1rem 2.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid var(--gold);
+  }
+  .btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(201, 168, 76, 0.3);
+  }
+  .btn-line {
+    display: inline-block;
+    background: transparent;
+    color: var(--navy);
+    padding: 1rem 2.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border: 1px solid var(--navy);
+    margin-left: 0.5rem;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-line:hover {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  /* SECTION SHELLS */
+  .ab-section {
+    padding: 6rem 2rem;
+  }
+  .ab-section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .ab-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.2;
+    margin: 0 0 2rem;
+    color: var(--navy);
+    max-width: 780px;
+  }
+  .ab-section-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  /* WHY CLIENTS CALL US */
+  .ab-why {
+    background: var(--paper);
+  }
+  .ab-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0;
+    margin-top: 1rem;
+    background: var(--white);
+    border: 1px solid var(--line);
+  }
+  .ab-why-cell {
+    padding: 2.5rem 2rem;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .ab-why-cell:nth-child(3n) { border-right: none; }
+  .ab-why-cell:nth-last-child(-n+3) { border-bottom: none; }
+  @media (max-width: 860px) {
+    .ab-why-cell { border-right: none !important; border-bottom: 1px solid var(--line) !important; }
+    .ab-why-cell:last-child { border-bottom: none !important; }
+  }
+  .ab-why-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  .ab-why-cell h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin: 0 0 0.75rem;
+    font-weight: 600;
+  }
+  .ab-why-cell p {
+    color: var(--muted);
+    margin: 0;
+    font-size: 0.97rem;
+  }
+
+  /* CAPABILITIES MATRIX */
+  .ab-cap {
+    background: var(--white);
+  }
+  .ab-cap-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .ab-cap-row:last-child { border-bottom: 1px solid var(--line); }
+  @media (max-width: 720px) {
+    .ab-cap-row { grid-template-columns: 1fr; gap: 1rem; }
+  }
+  .ab-cap-row h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--navy);
+    margin: 0;
+    font-weight: 600;
+  }
+  .ab-cap-row p {
+    color: var(--ink);
+    margin: 0 0 1rem;
+    font-size: 1rem;
+  }
+  .ab-cap-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .ab-cap-tag {
+    background: var(--paper);
+    color: var(--ink);
+    padding: 0.4rem 0.85rem;
+    font-size: 0.82rem;
+    border: 1px solid var(--line);
+    letter-spacing: 0.02em;
+  }
+
+  /* OPERATOR PROOF */
+  .ab-proof {
+    background: var(--navy);
+    color: var(--white);
+  }
+  .ab-proof h2 { color: var(--white); }
+  .ab-proof-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+    line-height: 1.4;
+    color: var(--white);
+    max-width: 900px;
+    margin: 2rem 0;
+    padding-left: 2rem;
+    border-left: 3px solid var(--gold);
+  }
+  .ab-proof-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .ab-proof-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+  }
+  .ab-proof-item p {
+    color: rgba(255, 255, 255, 0.78);
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  /* APPROACH */
+  .ab-approach {
+    background: var(--paper);
+  }
+  .ab-approach-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+  .ab-step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--gold);
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+  .ab-approach-step h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin: 0 0 0.6rem;
+    font-weight: 600;
+  }
+  .ab-approach-step p {
+    color: var(--muted);
+    margin: 0;
+    font-size: 0.97rem;
+  }
+
+  /* CTA */
+  .ab-cta {
+    background: var(--white);
+    text-align: center;
+    padding: 6rem 2rem;
+    border-top: 1px solid var(--line);
+  }
+  .ab-cta h2 {
+    margin: 0 auto 1.5rem;
+    max-width: 780px;
+  }
+  .ab-cta p {
+    font-size: 1.15rem;
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 auto 2.5rem;
+  }
+  .ab-cta-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* ANIMATIONS */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- =============================================
+     NAV
+============================================= -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <a href="../index.html" class="nav-logo">
+    <img src="../assets/images/logo-advanedge.png" alt="Advanedge Consulting logo" />
+    Advanedge Consulting
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="../index.html#services">Services</a></li>
+    <li><a href="../digital-growth.html">Digital Growth</a></li>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#testimonials">Success Stories</a></li>
+    <li><a href="../index.html#blog">Blog</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+
+  <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener" class="btn-nav" aria-label="Book a call">Book a Call</a>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main class="ab-wrap">
+
+  <!-- HERO -->
+  <section class="ab-hero">
+    <div class="ab-hero-inner">
+      <div>
+        <div class="ab-eyebrow fade-up">Abrigo &amp; Sageworks · Specialist Practice</div>
+        <h1 class="fade-up">The consultancy banks call when <em>Abrigo gets strategic.</em></h1>
+        <p class="fade-up">Implementation recovery. Workflow redesign. Decision model optimization. Core integration. We're the specialist firm community banks and credit unions bring in when their Abrigo or Sageworks platform is stuck, fragmented, or ready for modernization.</p>
+        <div class="fade-up">
+          <a href="https://calendly.com/marvin-advanedge/call" class="btn-gold" style="background: var(--gold); color: var(--navy);">Book a Discovery Call</a>
+        </div>
+      </div>
+      <div class="ab-hero-stats fade-up">
+        <div class="ab-stat">
+          <div class="ab-stat-num">10+</div>
+          <div class="ab-stat-label">Years inside the Abrigo / Sageworks ecosystem</div>
+        </div>
+        <div class="ab-stat">
+          <div class="ab-stat-num">$2B+</div>
+          <div class="ab-stat-label">Lending operations transformed</div>
+        </div>
+        <div class="ab-stat">
+          <div class="ab-stat-num">DFW</div>
+          <div class="ab-stat-label">Based in Dallas–Fort Worth, supporting institutions nationwide</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CLIENTS CALL US -->
+  <section class="ab-section ab-why">
+    <div class="ab-section-inner">
+      <span class="ab-section-eyebrow fade-up">Why Institutions Call Us</span>
+      <h2 class="fade-up">When generalist consultants run out of depth, we start.</h2>
+      <div class="ab-why-grid">
+        <div class="ab-why-cell fade-up">
+          <div class="ab-why-label">Scenario 01</div>
+          <h3>Stalled Implementation</h3>
+          <p>Your Abrigo rollout went live but never delivered the workflow gains. Adoption is uneven, exceptions are manual, and the original consultant is gone.</p>
+        </div>
+        <div class="ab-why-cell fade-up">
+          <div class="ab-why-label">Scenario 02</div>
+          <h3>Decision Model Drift</h3>
+          <p>Your scorecards and decision rules have been edited a dozen times by a dozen people. Nobody fully owns the configuration anymore.</p>
+        </div>
+        <div class="ab-why-cell fade-up">
+          <div class="ab-why-label">Scenario 03</div>
+          <h3>Workflow Bottlenecks</h3>
+          <p>Underwriting times are creeping up. eSign and document automation aren't being used the way the platform supports. You can feel the drag.</p>
+        </div>
+        <div class="ab-why-cell fade-up">
+          <div class="ab-why-label">Scenario 04</div>
+          <h3>Integration Pain</h3>
+          <p>Abrigo to Jack Henry, Symitar, or SilverLake works — but barely. Data quality issues surface in reporting. Reconciliations take longer than they should.</p>
+        </div>
+        <div class="ab-why-cell fade-up">
+          <div class="ab-why-label">Scenario 05</div>
+          <h3>Modernization Planning</h3>
+          <p>You're thinking about consolidating modules, expanding into commercial, or layering AI. You need a roadmap built by someone who knows the platform end-to-end.</p>
+        </div>
+        <div class="ab-why-cell fade-up">
+          <div class="ab-why-label">Scenario 06</div>
+          <h3>Vendor Due Diligence</h3>
+          <p>You're evaluating whether to stay on Abrigo, expand the footprint, or migrate. You need an unbiased operator opinion — not another sales pitch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES MATRIX -->
+  <section class="ab-section ab-cap">
+    <div class="ab-section-inner">
+      <span class="ab-section-eyebrow fade-up">Capabilities</span>
+      <h2 class="fade-up">Built around how the platform actually works in production.</h2>
+
+      <div class="ab-cap-row fade-up">
+        <div><h3>LOS Optimization</h3></div>
+        <div>
+          <p>Deep configuration review and tuning of your Abrigo / Sageworks instance — from origination through booking and post-close.</p>
+          <div class="ab-cap-tags">
+            <span class="ab-cap-tag">Workflow redesign</span>
+            <span class="ab-cap-tag">Decision model tuning</span>
+            <span class="ab-cap-tag">Document automation</span>
+            <span class="ab-cap-tag">eSign modernization</span>
+            <span class="ab-cap-tag">Exception management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ab-cap-row fade-up">
+        <div><h3>Implementation Recovery</h3></div>
+        <div>
+          <p>For institutions whose initial implementation never delivered the promised outcomes. We diagnose, stabilize, and re-baseline.</p>
+          <div class="ab-cap-tags">
+            <span class="ab-cap-tag">Gap analysis</span>
+            <span class="ab-cap-tag">Re-baselining</span>
+            <span class="ab-cap-tag">Adoption recovery</span>
+            <span class="ab-cap-tag">Configuration audit</span>
+            <span class="ab-cap-tag">Governance reset</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ab-cap-row fade-up">
+        <div><h3>Core Integration</h3></div>
+        <div>
+          <p>Architect and remediate the connections between Abrigo and your core platform. Built for resilience, not just functionality.</p>
+          <div class="ab-cap-tags">
+            <span class="ab-cap-tag">Jack Henry</span>
+            <span class="ab-cap-tag">Symitar</span>
+            <span class="ab-cap-tag">SilverLake</span>
+            <span class="ab-cap-tag">API strategy</span>
+            <span class="ab-cap-tag">Middleware design</span>
+            <span class="ab-cap-tag">Data quality</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ab-cap-row fade-up">
+        <div><h3>AI Enablement</h3></div>
+        <div>
+          <p>Operationalize AI inside your lending workflow — not as a vendor pilot, but as a measurable productivity layer that the team will actually adopt.</p>
+          <div class="ab-cap-tags">
+            <span class="ab-cap-tag">Document intelligence</span>
+            <span class="ab-cap-tag">Underwriting assist</span>
+            <span class="ab-cap-tag">Exception triage</span>
+            <span class="ab-cap-tag">Workflow orchestration</span>
+            <span class="ab-cap-tag">Readiness scoring</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ab-cap-row fade-up">
+        <div><h3>Executive Advisory</h3></div>
+        <div>
+          <p>For CIOs, Chief Lending Officers, and EVPs who need a trusted operator-level voice at the strategy table — not another deck.</p>
+          <div class="ab-cap-tags">
+            <span class="ab-cap-tag">Roadmap design</span>
+            <span class="ab-cap-tag">Vendor due diligence</span>
+            <span class="ab-cap-tag">Board readiness</span>
+            <span class="ab-cap-tag">Modernization strategy</span>
+            <span class="ab-cap-tag">Architecture governance</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OPERATOR PROOF -->
+  <section class="ab-section ab-proof">
+    <div class="ab-section-inner">
+      <span class="ab-section-eyebrow fade-up">Operator-Level Experience</span>
+      <h2 class="fade-up">We've sat in the seats your team sits in.</h2>
+      <div class="ab-proof-quote fade-up">
+        Most consultants describe Abrigo. We've configured it, integrated it, fixed it, and presented its outcomes to executive committees. That's the difference between strategy on paper and modernization that ships.
+      </div>
+      <div class="ab-proof-list">
+        <div class="ab-proof-item fade-up">
+          <h4>Implementation</h4>
+          <p>Hands-on configuration, workflow design, decision model build, eSign rollout.</p>
+        </div>
+        <div class="ab-proof-item fade-up">
+          <h4>Integration</h4>
+          <p>Jack Henry, Symitar, and SilverLake integration architecture and data flow design.</p>
+        </div>
+        <div class="ab-proof-item fade-up">
+          <h4>Product Ownership</h4>
+          <p>Owning lending technology roadmaps end-to-end at enterprise scale.</p>
+        </div>
+        <div class="ab-proof-item fade-up">
+          <h4>Executive Governance</h4>
+          <p>Translating lending technology into language boards and executive committees act on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="ab-section ab-approach">
+    <div class="ab-section-inner">
+      <span class="ab-section-eyebrow fade-up">How We Engage</span>
+      <h2 class="fade-up">Most engagements start the same way: with clarity.</h2>
+      <div class="ab-approach-steps">
+        <div class="ab-approach-step fade-up">
+          <div class="ab-step-num">01</div>
+          <h3>Discovery Call</h3>
+          <p>30 minutes. Where you are, where you want to be, and whether we're the right fit. No pitch.</p>
+        </div>
+        <div class="ab-approach-step fade-up">
+          <div class="ab-step-num">02</div>
+          <h3>Assessment</h3>
+          <p>A focused 2–3 week engagement that produces a board-ready modernization roadmap.</p>
+        </div>
+        <div class="ab-approach-step fade-up">
+          <div class="ab-step-num">03</div>
+          <h3>Execution Advisory</h3>
+          <p>Ongoing executive partnership during implementation, integration, or modernization phases.</p>
+        </div>
+      </div>
+      <div style="margin-top: 3rem;" class="fade-up">
+        <a href="lending-modernization-assessment.html" class="btn-line">Explore the Assessment →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="ab-cta">
+    <span class="ab-section-eyebrow fade-up">Start a Conversation</span>
+    <h2 class="fade-up">Get the operator-level perspective your Abrigo program needs.</h2>
+    <p class="fade-up">If you're modernizing, stuck, or planning the next phase — a 30-minute discovery call is the right first step.</p>
+    <div class="ab-cta-row fade-up">
+      <a href="https://calendly.com/marvin-advanedge/call" class="btn-gold">Book a Discovery Call</a>
+      <a href="mailto:info@advanedgeconsulting.com" class="btn-line">Email Us</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- =============================================
+     FOOTER
+============================================= -->
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">
+        <img src="../assets/images/logo-advanedge.png" alt="Advanedge logo" />
+        Advanedge Consulting
+      </div>
+      <p class="footer-tagline">Fintech Advisory for Community Banks &amp; Credit Unions</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="abrigo-sageworks.html">Abrigo &amp; Sageworks</a></li>
+        <li><a href="lending-modernization-assessment.html">Modernization Assessment</a></li>
+        <li><a href="../index.html#how-we-work">Implementation Advisory</a></li>
+        <li><a href="../index.html#services">AI Enablement</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#blog">Blog</a></li>
+        <li><a href="mailto:info@advanedgeconsulting.com">Contact</a></li>
+        <li><a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">Book a Call</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact">
+        <div><a href="mailto:info@advanedgeconsulting.com">info@advanedgeconsulting.com</a></div>
+        <div><a href="https://www.advanedgeconsulting.com" target="_blank" rel="noopener">www.advanedgeconsulting.com</a></div>
+        <div><a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">calendly.com/marvin-advanedge/call</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Advanedge Consulting. All rights reserved.</span>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Legal Notice</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
