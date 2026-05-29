@@ -87,7 +87,14 @@
   <section class="hero" aria-label="Hero">
     <div class="hero-pattern" aria-hidden="true"></div>
     <div class="hero-watermark" aria-hidden="true">
-      <img src="assets/images/logo-advanedge.png" alt="" />
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+        <defs>
+          <pattern id="dot-grid" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+            <circle cx="1.5" cy="1.5" r="1.5" fill="rgba(201,168,76,0.35)" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#dot-grid)" />
+      </svg>
     </div>
     <div class="hero-content">
       <div class="hero-rule" aria-hidden="true"></div>
