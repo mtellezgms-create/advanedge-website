@@ -31,22 +31,6 @@
   overflow: hidden;
 }
 
-.dg-hero-watermark {
-  position: absolute;
-  left: -80px;
-  bottom: -80px;
-  width: 480px;
-  height: 480px;
-  pointer-events: none;
-  z-index: 0;
-}
-.dg-hero-watermark img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  opacity: 0.04;
-  filter: brightness(10);
-}
 
 .dg-hero-content {
   text-align: center;
