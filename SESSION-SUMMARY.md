@@ -1,150 +1,136 @@
-# Advanedge Website — Session Summary
-**Date:** May 21–22, 2026  
-**Repo:** https://github.com/mtellezgms-create/advanedge-website
+# Advanedge Website — Project Summary
+
+**Last session:** June 1, 2026 (Sunday night)
+**Status:** 100% deploy-ready. Deploying tonight, posting Tuesday June 2.
 
 ---
 
-## What Was Built
+## What This Project Is
 
-### Core Pages
-| File | Description |
-|------|-------------|
-| `index.html` | Main fintech advisory homepage — 11 sections |
-| `digital-growth.html` | Standalone YouTube automation subpage |
-| `blog/loan-origination-system-implementation.html` | SEO blog post — LOS failures & best practices |
-| `blog/youtube-automation-why-you-need-a-vendor.html` | SEO blog post — why entrepreneurs hire a vendor |
+Personal consulting business website for **Marvin Tellez**, founder of Advanedge Consulting. Two service lines under one brand:
 
-### Supporting Files
-| File | Description |
-|------|-------------|
-| `css/styles.css` | Global styles — navy/gold design system |
-| `css/digital-growth.css` | Digital Growth page styles + Space Grotesk |
-| `js/main.js` | Scroll animations, nav, hamburger menu |
-| `sitemap.xml` | All 5 pages for Google indexing |
-| `robots.txt` | Search engine access + sitemap reference |
-| `CNAME` | advanedgeconsulting.com |
-| `.nojekyll` | Disables Jekyll on GitHub Pages |
+1. **Fintech Advisory** — community banks & credit unions, Abrigo/Sageworks specialist (the core business, 7 years running, referral-driven)
+2. **Digital Growth** — done-for-you YouTube automation
 
-### Assets
-| File | Description |
-|------|-------------|
-| `assets/images/logo-advanedge.png` | Brand logo |
-| `assets/images/logo-advanedge-calendly.png` | 500×500 cropped logo for Calendly |
-| `assets/images/og-fintech.png` | 1200×630 OG share image — homepage |
-| `assets/images/og-digital-growth.png` | 1200×630 OG share image — Digital Growth |
-| `assets/images/headshot-marvin-tellez.jpg` | Founder photo |
-| `assets/images/headshot-*.png` | 3 testimonial headshots |
-| `assets/images/logo-*.png/jpeg` | 7 ecosystem partner logos |
+Pure HTML/CSS/vanilla JS. Hosted on GitHub Pages, custom domain `advanedgeconsulting.com`.
 
----
-
-## Design System
-- **Colors:** Navy `#0A1628` · Gold `#C9A84C` · White `#FFFFFF`
-- **Fonts:** Playfair Display (headlines) · Source Sans Pro (body) · Space Grotesk (Digital Growth)
-- **Animations:** Intersection Observer fade-up · staggered hero load
-- **Nav:** Sticky with scroll shadow · hamburger mobile menu
-
----
-
-## Site Architecture
-
-```
-advanedgeconsulting.com          → index.html (Fintech Advisory)
-advanedgeconsulting.com/digital-growth.html  → YouTube Automation
-advanedgeconsulting.com/blog/loan-origination-system-implementation.html
-advanedgeconsulting.com/blog/youtube-automation-why-you-need-a-vendor.html
-```
-
----
-
-## Key Decisions Made
-
-### Positioning
-- Broadened from Abrigo-only → fintech-first, Abrigo as flagship specialization
-- Headline: *"Fintech Advisory for Community Banks & Credit Unions"*
-- Why section: *"Strategic. Technical. And Fluent in Both Boardrooms and Banking Systems."*
-- DFW-based, support offered nationwide (removed bilingual reference)
-
-### Service Structure
-- **Core:** Fintech consulting (Abrigo, LOS, core banking, AI-enabled lending)
-- **Second branch:** Digital Growth — YouTube automation done-for-you
-- Both under same Advanedge brand, linked via nav
-
-### Pricing (Digital Growth)
-| Tier | Price | Cadence |
-|------|-------|---------|
-| Launch | $2,997 | One-time |
-| Scale | $3,997 | /month |
-| Authority | $6,997 | /month |
-
----
-
-## All CTAs Point To
-- **Calendly:** https://calendly.com/marvin-advanedge/call ✅ confirmed live
-- **Email:** info@advanedgeconsulting.com
-
----
-
-## GitHub
 - **Repo:** https://github.com/mtellezgms-create/advanedge-website
-- **Branch:** main
-- **GitHub Pages:** Enable at repo Settings → Pages → main branch
-- **Custom domain:** advanedgeconsulting.com
+- **Local path:** C:\Users\mtell\advanedge-website
+- **Branch:** main (pushes deploy automatically)
 
 ---
 
-## Monday Night Deploy Steps
-1. **Namecheap DNS** — Advanced DNS → add records:
+## Site Map (all pages built and live in repo)
+
+| Page | Purpose |
+|------|---------|
+| `index.html` | Fintech Advisory homepage — 11 sections |
+| `digital-growth.html` | YouTube Automation page + live channel portfolio |
+| `blog/loan-origination-system-implementation.html` | SEO blog — LOS implementations |
+| `blog/youtube-automation-why-you-need-a-vendor.html` | SEO blog — YT automation vendor |
+| `privacy-policy.html` | Privacy policy |
+| `legal-notice.html` | Legal notice / disclaimer |
+| `sitemap.xml` + `robots.txt` | SEO infrastructure |
+
+---
+
+## Completed This Session
+
+- **Pushed entire site to GitHub** (new public repo, gh CLI authenticated)
+- **Calendly logo** — cropped + branded version uploaded to Marvin's Calendly account
+- **Two SEO blog posts** — long-form, schema markup, OG tags, author boxes, CTAs
+- **OG share images** — `og-fintech.png` + `og-digital-growth.png` (1200x630)
+- **Removed logo watermark** from Digital Growth hero, matched dot pattern to homepage
+- **Live channel portfolio** added to Digital Growth page — 5 real channels with stats:
+  - Stoic Reflections (113 subs, 33K views), The Machine Whisperer (27 subs, 1.1K),
+    Advanedge Consulting AI (15 subs, 1.6K), Biblical Wisdom Unearthed (6 subs, 738),
+    Stoic Investor (launching). Network total: 36K+ views, 163+ subs.
+- **Privacy Policy + Legal Notice pages** — built, all footer `#` links fixed across all 6 pages
+- **Wired OG/Twitter meta tags** into all pages
+- **LinkedIn content system** — full calendar June–Sept, weekly batch reminder (Sundays 8pm CST)
+- **Week 1 LinkedIn posts** — 4 posts written, refined, approved (`LINKEDIN-POSTS.md`)
+- **Week 1 LinkedIn images** — 4 branded graphics (`assets/images/linkedin/`)
+
+---
+
+## REMAINING — Deploy Tonight (Sunday June 1, 10:30pm CST)
+
+### 1. Namecheap DNS
+Domain List → advanedgeconsulting.com → Manage → Advanced DNS. Delete existing @ A records, then add:
 
 | Type | Host | Value |
 |------|------|-------|
-| A Record | @ | 185.199.108.153 |
-| A Record | @ | 185.199.109.153 |
-| A Record | @ | 185.199.110.153 |
-| A Record | @ | 185.199.111.153 |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
 | CNAME | www | mtellezgms-create.github.io |
 
-2. **GitHub Pages** — Settings → Pages → Branch: main → Custom domain: advanedgeconsulting.com
-3. DNS propagates overnight → site live Tuesday morning
+### 2. GitHub Pages
+github.com/mtellezgms-create/advanedge-website/settings/pages
+- Source: Deploy from branch → main → / (root) → Save
+- Custom domain: advanedgeconsulting.com → Save
+- Enforce HTTPS: checked (after DNS resolves)
+
+DNS propagates overnight. Site live by Tuesday morning.
 
 ---
 
-## Tuesday Launch Plan
-| Time | Action |
-|------|--------|
-| 9am | Verify site live, HTTPS green, all links working |
-| 10am | Post on LinkedIn (fintech angle, tag Abrigo + Jack Henry) |
-| Wed | Share LOS blog on Reddit r/fintech + r/banking |
-| Thu | Share YouTube blog on Reddit r/passive_income |
-| Fri | Create Google Business Profile |
+## REMAINING — Tuesday June 2 (Launch Day)
+
+1. Verify site is live + HTTPS green
+2. Post 4 LinkedIn posts on schedule (see below)
+
+### LinkedIn Posting Schedule — Week 1
+
+| Post | Date | Time CST | Image |
+|------|------|----------|-------|
+| Fintech launch | Jun 2 | 9:00am | post-tue-jun2-fintech.png |
+| Digital Growth launch | Jun 2 | 5:00pm | post-tue-jun2-digital-growth.png |
+| LOS article | Jun 4 | 9:00am | post-thu-jun4-fintech.png |
+| YT vendor article | Jun 4 | 5:00pm | post-thu-jun4-digital-growth.png |
+
+Schedule via LinkedIn native scheduler (clock icon in post composer). Copy from `LINKEDIN-POSTS.md`.
+On the two blog-share posts, drop the article URL in the first comment after posting.
+
+**Best-time research (this session):**
+- Fintech audience (CIOs/CLOs/lending execs): Tue–Thu, 9–11am CST
+- Digital Growth audience (entrepreneurs/investors): Tue–Thu, 5–6pm CST
 
 ---
 
-## Remaining To-Do (Next Session)
-- [ ] Wire `og:image` meta tags into all 4 pages (critical for LinkedIn share card)
-- [ ] Legal Notice page — content in SharePoint: *Advanedge Legal Notice.pdf*
-- [ ] Policy page — footer link currently points to `#`
-- [ ] Create Google Business Profile (post-launch)
+## Future / Backlog
+
+- **2026 Lending Modernization Playbook** — gated lead magnet PDF + landing page + email funnel (full spec in LAUNCH-CHECKLIST.md)
+- July blog posts — reminder set for June 28: "AI in Lending" (fintech) + "How Faceless Channels Make Money" (digital growth)
+- Google Business Profile
+- Replace old blog links (2 cards on homepage still point to legacy site)
+- Medium republishing (with canonical links)
+- Reddit distribution (r/fintech, r/banking, r/passive_income)
 
 ---
 
-## Blog Content Calendar
-| Month | Fintech | Digital Growth |
-|-------|---------|---------------|
-| June | ✅ LOS Implementation | ✅ Why You Need a Vendor |
-| July | AI in Lending: What Community Banks Are Actually Doing in 2026 | How Faceless YouTube Channels Make Money |
-| August | Jack Henry + Abrigo Integration | How to Pick a Niche in 2026 |
-| September | What to Ask Before Hiring a Fintech Consultant | What Does a Monetized Channel Actually Earn? |
-| October | The Real ROI of Abrigo | YouTube vs. Blogging vs. Podcasting |
-| November | Post-Implementation Regret | From Zero to 1,000 Subscribers |
+## Key Reference Files in Repo
 
-> **Reminder set: June 28 at 9am** — write July blog posts
+- `LINKEDIN-POSTS.md` — all post copy + full content calendar + tone guide
+- `LAUNCH-CHECKLIST.md` — deploy steps, DNS, playbook spec
+- `SESSION-SUMMARY.md` — this file
+- `CLAUDE.md` — project context for Claude sessions
 
 ---
 
-## Future Project: 2026 Lending Modernization Playbook
-**Format:** 20–30 page premium PDF (Gartner/McKinsey aesthetic)  
-**Strategy:** Free lead magnet gated behind email form → consulting funnel  
-**Sections:** Banking Technology Shift · Hidden Abrigo Problems · 5-Pillar Framework · AI Use Cases · Executive Readiness Scorecard  
-**Funnel:** Download → email sequence → discovery call  
-**Future paid PDFs:** AI in Community Banking · Abrigo Optimization Blueprint · API-First Banking Architecture
+## Active Reminders
+
+- **Sundays 8pm CST** — weekly LinkedIn batch (recurring; note: cron jobs are session-only and expire after 7 days — re-create if needed)
+- **June 28 9am** — write July blog posts
+
+---
+
+## Hardcoded Values (site-wide)
+
+- Calendly: https://calendly.com/marvin-advanedge/call
+- Email: info@advanedgeconsulting.com
+- LinkedIn: https://www.linkedin.com/in/mtellez2/
+- Company: Advanedge LLC, 3400 Waterview Pkwy, Richardson TX 75080
+- Digital Growth pricing: Launch $2,997 / Scale $3,997mo / Authority $6,997mo
+- Credibility: 26 yrs fintech, 10 yrs Abrigo/Sageworks, 7 yrs running Advanedge
