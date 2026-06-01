@@ -13,15 +13,13 @@
 
 26 years in fintech. 10 years embedded in the Abrigo / Sageworks ecosystem.
 
-Today I launched a consulting practice built around that experience.
+Word of mouth has been my only marketing for 7 years. Not every institution knows this level of specialized expertise is available to them. This is for them.
 
-Advanedge Consulting exists to help community banks and credit unions get the most out of their Abrigo investment — at every phase of the journey.
+Advanedge Consulting works with community banks and credit unions at every phase of their Abrigo journey — from pre-implementation planning through post-go-live ROI realization.
 
-Abrigo builds a powerful platform. Our job is to make sure your institution is positioned to maximize it — from pre-implementation planning through post-go-live ROI realization.
+Abrigo builds a powerful platform. We exist to make sure your Abrigo investment delivers everything it was designed to deliver.
 
-We work alongside your team and your Abrigo engagement to close the gap between technical deployment and operational transformation.
-
-If your institution is evaluating, implementing, or optimizing Abrigo — let's talk.
+If your institution is evaluating, implementing, or optimizing Abrigo — I'd like to connect.
 
 → advanedgeconsulting.com
 
@@ -54,19 +52,15 @@ Now we build them for you.
 
 ### Thursday June 4 — FINTECH
 
-Most Abrigo implementations don't fail because of the software.
+The institutions that get the most out of Abrigo share one thing in common.
 
-They fail because of what happens around it.
+They understood what the implementation required before it started.
 
-I've seen it repeatedly:
+The partner deploys the platform. But the work around it — change management, data migration, core integration, workflow design, staff readiness — that belongs to your institution.
 
-The vendor deploys the product. The institution isn't ready to receive it. Staff work around the system instead of in it. Reports don't match expectations. The integration has edge cases nobody caught in UAT.
+The gap between a technical go-live and an operational transformation doesn't close itself. The institutions that close it plan for it from day one.
 
-Six months post-go-live, leadership asks why the ROI isn't showing up.
-
-It's not the platform. It's the gap between technical go-live and operational transformation — and that gap doesn't close itself.
-
-I wrote a full breakdown of the 5 most common LOS implementation failure points. If your institution is mid-implementation or planning one, it's worth 9 minutes.
+I wrote a full breakdown of what that preparation actually looks like — and the 5 points where most implementations fall short. If your institution is planning or mid-implementation, it's worth 9 minutes.
 
 Article in comments ↓
 
