@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.advanedgeconsulting.com)",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"assets\\\\images\")",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:www.linkedin.com)",
+      "PowerShell(Get-ChildItem \"$env:USERPROFILE\\\\Downloads\" | Sort-Object LastWriteTime -Descending | Select-Object -First 10 | Format-Table Name, LastWriteTime, Length)",
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\mtell\\\\Downloads\\\\me pic.jpg\" \"C:\\\\Users\\\\mtell\\\\advanedge-website\\\\assets\\\\images\\\\headshot-marvin-tellez.jpg\"; Write-Host \"Copied. Size: $\\(\\(Get-Item 'C:\\\\Users\\\\mtell\\\\advanedge-website\\\\assets\\\\images\\\\headshot-marvin-tellez.jpg'\\).Length\\) bytes\")",
+      "WebSearch",
+      "WebFetch(domain:www.dfydave.com)",
+      "WebFetch(domain:facelessytautomation.com)",
+      "WebFetch(domain:ecomautomized.com)",
+      "WebFetch(domain:seizemarketingagency.com)",
+      "WebFetch(domain:facelesschannelagency.com)",
+      "Bash(git init *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); gh --version)",
+      "WebFetch(domain:advanedgeconsulting-my.sharepoint.com)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__get_page_text",
+      "mcp__Claude_in_Chrome__computer",
+      "Bash(git commit -m 'fix: add white background to blog article body sections *)",
+      "Bash(git commit -m 'feat: replace hero logo watermark with gold dot grid pattern *)",
+      "WebFetch(domain:stoicsage.org)",
+      "WebFetch(domain:www.youtube.com)",
+      "mcp__Claude_in_Chrome__read_page",
+      "WebFetch(domain:www.hootsuite.com)",
+      "WebFetch(domain:sproutsocial.com)",
+      "WebFetch(domain:buffer.com)"
+    ]
+  }
+}
