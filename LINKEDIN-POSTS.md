@@ -17,7 +17,7 @@ Word of mouth has been my only marketing for 7 years. Not every institution know
 
 Advanedge Consulting works with community banks and credit unions at every phase of their Abrigo journey — from pre-implementation planning through post-go-live ROI realization.
 
-Abrigo builds a powerful platform. We exist to make sure your Abrigo investment delivers everything it was designed to deliver.
+Abrigo builds a powerful platform. We help financial institutions realize the full potential of their Abrigo investment.
 
 If your institution is evaluating, implementing, or optimizing Abrigo — I'd like to connect.
 
