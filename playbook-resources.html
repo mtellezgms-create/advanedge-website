@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playbook Resources | Advanedge Digital Growth</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="assets/images/logo-advanedge.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0D1B2A;
+      --navy-mid: #1A2E42;
+      --teal: #00B4A0;
+      --teal-light: #E6FAF8;
+      --gold: #F5A623;
+      --gold-light: #FFFBEB;
+      --white: #ffffff;
+      --light: #F5F7FA;
+      --mid: #6B7280;
+      --text: #2D3748;
+      --border: #E2E8F0;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Source Sans Pro', sans-serif; background: var(--light); color: var(--text); }
+
+    /* ── LOCK SCREEN ── */
+    #lock-screen {
+      position: fixed; inset: 0; background: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 1000; flex-direction: column; gap: 0;
+    }
+    .lock-box {
+      background: #0F2337; border: 1px solid rgba(0,180,160,0.3);
+      border-radius: 16px; padding: 48px 40px; width: 100%; max-width: 420px;
+      text-align: center;
+    }
+    .lock-logo { width: 56px; height: 56px; margin: 0 auto 20px; display: block; }
+    .lock-brand { font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; color: var(--teal); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; }
+    .lock-title { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+    .lock-sub { font-size: 15px; color: rgba(255,255,255,0.5); margin-bottom: 32px; line-height: 1.5; }
+    .lock-input {
+      width: 100%; padding: 14px 18px; border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.06);
+      color: var(--white); font-size: 16px; font-family: 'Source Sans Pro', sans-serif;
+      outline: none; margin-bottom: 14px; text-align: center; letter-spacing: 0.08em;
+    }
+    .lock-input:focus { border-color: var(--teal); }
+    .lock-input::placeholder { color: rgba(255,255,255,0.3); letter-spacing: 0; }
+    .lock-btn {
+      width: 100%; padding: 14px; border-radius: 8px; border: none;
+      background: var(--teal); color: var(--white); font-size: 15px;
+      font-weight: 700; font-family: 'Space Grotesk', sans-serif;
+      cursor: pointer; transition: background 0.2s;
+    }
+    .lock-btn:hover { background: #009e8c; }
+    .lock-error { color: #FC8181; font-size: 13px; margin-top: 10px; min-height: 18px; }
+    .lock-note { font-size: 12px; color: rgba(255,255,255,0.25); margin-top: 20px; }
+
+    /* ── MAIN CONTENT (hidden until unlocked) ── */
+    #main-content { display: none; }
+
+    /* ── NAV ── */
+    .nav {
+      background: var(--navy); padding: 0 40px; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-brand img { width: 32px; height: 32px; }
+    .nav-brand span { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; color: var(--white); }
+    .nav-badge { background: var(--teal); color: var(--white); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.06em; }
+
+    /* ── HERO BANNER ── */
+    .resource-hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #0F2337 100%);
+      padding: 56px 40px 48px; text-align: center;
+      border-bottom: 1px solid rgba(0,180,160,0.2);
+    }
+    .resource-hero-eyebrow { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; color: var(--teal); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; }
+    .resource-hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 700; color: var(--white); margin-bottom: 14px; line-height: 1.2; }
+    .resource-hero p { font-size: 17px; color: rgba(255,255,255,0.6); max-width: 560px; margin: 0 auto 28px; line-height: 1.6; }
+    .hero-pills { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .hero-pill { background: rgba(0,180,160,0.12); border: 1px solid rgba(0,180,160,0.3); color: var(--teal); font-size: 13px; font-weight: 600; padding: 6px 16px; border-radius: 20px; }
+
+    /* ── LAYOUT ── */
+    .resource-body { max-width: 960px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    /* ── SECTION CARDS ── */
+    .resource-section { background: var(--white); border-radius: 12px; border: 1px solid var(--border); margin-bottom: 28px; overflow: hidden; }
+    .resource-section-header {
+      display: flex; align-items: center; gap: 14px;
+      padding: 22px 28px; border-bottom: 1px solid var(--border);
+      background: var(--white); cursor: pointer; user-select: none;
+    }
+    .resource-section-header:hover { background: var(--light); }
+    .section-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--teal-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .section-icon svg { width: 20px; height: 20px; stroke: var(--teal); }
+    .section-title-wrap { flex: 1; }
+    .section-num { font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2px; }
+    .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 700; color: var(--navy); }
+    .section-chevron { width: 20px; height: 20px; stroke: var(--mid); transition: transform 0.2s; flex-shrink: 0; }
+    .resource-section.open .section-chevron { transform: rotate(180deg); }
+    .resource-section-body { padding: 28px; display: none; }
+    .resource-section.open .resource-section-body { display: block; }
+
+    /* ── CHECKLIST ── */
+    .checklist { list-style: none; }
+    .checklist li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 15px; line-height: 1.5; }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--teal); flex-shrink: 0; margin-top: 2px; cursor: pointer; }
+    .checklist li label { cursor: pointer; }
+    .checklist li.checked label { text-decoration: line-through; color: var(--mid); }
+    .week-label { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase; margin: 20px 0 8px; }
+    .week-label:first-child { margin-top: 0; }
+
+    /* ── TOOL TABLE ── */
+    .tool-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .tool-table th { background: var(--navy); color: var(--white); padding: 10px 14px; text-align: left; font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; }
+    .tool-table td { padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+    .tool-table tr:nth-child(even) td { background: var(--light); }
+    .tool-table tr:last-child td { border-bottom: none; }
+    .tool-link { color: var(--teal); text-decoration: none; font-weight: 600; }
+    .tool-link:hover { text-decoration: underline; }
+    .cost-badge { background: var(--teal-light); color: var(--teal); font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 4px; white-space: nowrap; }
+
+    /* ── PROMPT CARDS ── */
+    .prompt-card { background: var(--light); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 20px; overflow: hidden; }
+    .prompt-card:last-child { margin-bottom: 0; }
+    .prompt-card-header { padding: 14px 18px; background: var(--navy); display: flex; justify-content: space-between; align-items: center; }
+    .prompt-card-title { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 600; color: var(--white); }
+    .copy-btn { background: rgba(0,180,160,0.15); border: 1px solid rgba(0,180,160,0.4); color: var(--teal); font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 6px; cursor: pointer; font-family: 'Source Sans Pro', sans-serif; transition: background 0.2s; }
+    .copy-btn:hover { background: rgba(0,180,160,0.3); }
+    .copy-btn.copied { color: #68D391; border-color: #68D391; }
+    .prompt-body { padding: 18px; font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.7; color: var(--text); white-space: pre-wrap; word-break: break-word; }
+
+    /* ── NICHE TRACKER ── */
+    .niche-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .niche-table th { background: var(--navy); color: var(--white); padding: 10px 14px; text-align: left; font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; }
+    .niche-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+    .niche-table tr:nth-child(even) td { background: var(--light); }
+    .niche-table tr:last-child td { border-bottom: none; }
+    .cpm-high { color: #276749; font-weight: 700; }
+    .cpm-mid { color: #744210; font-weight: 700; }
+    .cpm-low { color: var(--mid); }
+
+    /* ── PIPELINE LOG ── */
+    .pipeline-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .pipeline-table th { background: var(--navy); color: var(--white); padding: 10px 12px; text-align: left; font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; white-space: nowrap; }
+    .pipeline-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    .pipeline-table tr:nth-child(even) td { background: var(--light); }
+    .pipeline-table tr:last-child td { border-bottom: none; }
+    .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+    .dot-done { background: var(--teal); }
+    .dot-pending { background: var(--border); }
+    .dot-inprog { background: var(--gold); }
+
+    /* ── RESOURCES ── */
+    .resource-links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+    .resource-link-card { border: 1px solid var(--border); border-radius: 10px; padding: 18px; text-decoration: none; color: var(--text); transition: border-color 0.2s, box-shadow 0.2s; display: block; }
+    .resource-link-card:hover { border-color: var(--teal); box-shadow: 0 2px 12px rgba(0,180,160,0.1); }
+    .resource-link-category { font-size: 11px; font-weight: 700; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+    .resource-link-title { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+    .resource-link-desc { font-size: 13px; color: var(--mid); line-height: 1.5; }
+    .resource-link-url { font-size: 12px; color: var(--teal); margin-top: 8px; }
+
+    /* ── FOOTER ── */
+    .resource-footer { background: var(--navy); text-align: center; padding: 28px 24px; }
+    .resource-footer p { font-size: 13px; color: rgba(255,255,255,0.35); }
+    .resource-footer a { color: var(--teal); text-decoration: none; }
+
+    /* ── BODY COPY ── */
+    .body-copy { font-size: 15px; line-height: 1.7; color: var(--text); margin-bottom: 20px; }
+    .callout { background: var(--teal-light); border-left: 3px solid var(--teal); padding: 14px 18px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
+    .callout strong { color: var(--navy); }
+    .warn-callout { background: var(--gold-light); border-left: 3px solid var(--gold); padding: 14px 18px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
+
+    @media (max-width: 640px) {
+      .resource-hero h1 { font-size: 26px; }
+      .nav { padding: 0 20px; }
+      .resource-body { padding: 28px 16px 60px; }
+      .resource-section-header { padding: 18px 20px; }
+      .resource-section-body { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ LOCK SCREEN ══════════════════════════════════════════════════════ -->
+<div id="lock-screen">
+  <div class="lock-box">
+    <img src="assets/images/logo-advanedge.png" alt="Advanedge" class="lock-logo" />
+    <p class="lock-brand">Advanedge Digital Growth</p>
+    <h1 class="lock-title">Playbook Resource Hub</h1>
+    <p class="lock-sub">Enter your access password to unlock your companion resources.</p>
+    <input type="password" id="password-input" class="lock-input" placeholder="Enter password" autocomplete="off" />
+    <button class="lock-btn" onclick="checkPassword()">Unlock Access</button>
+    <p class="lock-error" id="lock-error"></p>
+    <p class="lock-note">Purchased the playbook? Check your Gumroad receipt for the password.</p>
+  </div>
+</div>
+
+<!-- ══ MAIN CONTENT ══════════════════════════════════════════════════════ -->
+<div id="main-content">
+
+  <!-- Nav -->
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/images/logo-advanedge.png" alt="Advanedge" />
+      <span>Advanedge Consulting</span>
+    </a>
+    <span class="nav-badge">PLAYBOOK RESOURCES</span>
+  </nav>
+
+  <!-- Hero -->
+  <div class="resource-hero">
+    <p class="resource-hero-eyebrow">YouTube Automation Playbook</p>
+    <h1>Your Companion Resource Hub</h1>
+    <p>Everything you need alongside the playbook — interactive checklists, tool links, prompt templates, and tracking tools. Bookmark this page.</p>
+    <div class="hero-pills">
+      <span class="hero-pill">✓ 30-Day Checklist</span>
+      <span class="hero-pill">✓ Tool Stack Links</span>
+      <span class="hero-pill">✓ Prompt Library</span>
+      <span class="hero-pill">✓ Niche Tracker</span>
+      <span class="hero-pill">✓ Pipeline Log</span>
+    </div>
+  </div>
+
+  <div class="resource-body">
+
+    <!-- ── 01 CHECKLIST ─────────────────────────────────────────────── -->
+    <div class="resource-section open" id="section-checklist">
+      <div class="resource-section-header" onclick="toggleSection('section-checklist')">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <div class="section-title-wrap">
+          <div class="section-num">01</div>
+          <div class="section-title">30-Day Launch Checklist</div>
+        </div>
+        <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="resource-section-body">
+        <div class="callout"><strong>How to use:</strong> Check off each item as you complete it. Progress is saved in your browser.</div>
+
+        <div class="week-label">Week 1 — Infrastructure Setup</div>
+        <ul class="checklist" id="checklist">
+          <li id="c1"><input type="checkbox" onchange="saveCheck('c1',this)"> <label onclick="toggleCheck('c1')">Google Cloud project created with YouTube Data API v3, TTS API, Speech API enabled</label></li>
+          <li id="c2"><input type="checkbox" onchange="saveCheck('c2',this)"> <label onclick="toggleCheck('c2')">Service account created, google-credentials.json downloaded</label></li>
+          <li id="c3"><input type="checkbox" onchange="saveCheck('c3',this)"> <label onclick="toggleCheck('c3')">Anthropic API account created, ANTHROPIC_API_KEY secured</label></li>
+          <li id="c4"><input type="checkbox" onchange="saveCheck('c4',this)"> <label onclick="toggleCheck('c4')">Replicate account created for Flux thumbnail generation</label></li>
+          <li id="c5"><input type="checkbox" onchange="saveCheck('c5',this)"> <label onclick="toggleCheck('c5')">YouTube channel created (Brand Account), channel art uploaded</label></li>
+          <li id="c6"><input type="checkbox" onchange="saveCheck('c6',this)"> <label onclick="toggleCheck('c6')">authorize-youtube.js run successfully, tokens.json saved</label></li>
+          <li id="c7"><input type="checkbox" onchange="saveCheck('c7',this)"> <label onclick="toggleCheck('c7')">Node.js / Bun runtime confirmed working</label></li>
+          <li id="c8"><input type="checkbox" onchange="saveCheck('c8',this)"> <label onclick="toggleCheck('c8')">Remotion installed and test render successful</label></li>
+          <li id="c9"><input type="checkbox" onchange="saveCheck('c9',this)"> <label onclick="toggleCheck('c9')">.env file created with all required environment variables</label></li>
+
+          <div class="week-label">Week 2 — Pipeline Assembly</div>
+          <li id="c10"><input type="checkbox" onchange="saveCheck('c10',this)"> <label onclick="toggleCheck('c10')">generate-script.js tested: Claude returns valid script + metadata JSON</label></li>
+          <li id="c11"><input type="checkbox" onchange="saveCheck('c11',this)"> <label onclick="toggleCheck('c11')">generate-audio.js tested: WAV file produced at correct length</label></li>
+          <li id="c12"><input type="checkbox" onchange="saveCheck('c12',this)"> <label onclick="toggleCheck('c12')">generate-subtitles.js tested: valid SRT file produced</label></li>
+          <li id="c13"><input type="checkbox" onchange="saveCheck('c13',this)"> <label onclick="toggleCheck('c13')">build-scenes-from-srt.js tested: scenes.json produced</label></li>
+          <li id="c14"><input type="checkbox" onchange="saveCheck('c14',this)"> <label onclick="toggleCheck('c14')">build-audio-peaks.js tested: peaks.json produced</label></li>
+          <li id="c15"><input type="checkbox" onchange="saveCheck('c15',this)"> <label onclick="toggleCheck('c15')">render-video.js tested: MP4 file produced and playable</label></li>
+          <li id="c16"><input type="checkbox" onchange="saveCheck('c16',this)"> <label onclick="toggleCheck('c16')">generate-thumbnail.js tested: 1280x720 PNG produced</label></li>
+          <li id="c17"><input type="checkbox" onchange="saveCheck('c17',this)"> <label onclick="toggleCheck('c17')">Manual end-to-end test: full pipeline run on one topic</label></li>
+          <li id="c18"><input type="checkbox" onchange="saveCheck('c18',this)"> <label onclick="toggleCheck('c18')">First video uploaded manually via YouTube Studio to verify quality</label></li>
+
+          <div class="week-label">Week 3 — Automation & Quality</div>
+          <li id="c19"><input type="checkbox" onchange="saveCheck('c19',this)"> <label onclick="toggleCheck('c19')">run-daily-pipeline.js tested: full automated run completes without error</label></li>
+          <li id="c20"><input type="checkbox" onchange="saveCheck('c20',this)"> <label onclick="toggleCheck('c20')">Logging confirmed: all pipeline steps write to log file</label></li>
+          <li id="c21"><input type="checkbox" onchange="saveCheck('c21',this)"> <label onclick="toggleCheck('c21')">Error handling confirmed: simulated API failure caught and logged gracefully</label></li>
+          <li id="c22"><input type="checkbox" onchange="saveCheck('c22',this)"> <label onclick="toggleCheck('c22')">Upload verified: video, thumbnail, title, description, tags correct on YouTube</label></li>
+          <li id="c23"><input type="checkbox" onchange="saveCheck('c23',this)"> <label onclick="toggleCheck('c23')">First 5 automated videos reviewed: retention curve acceptable (>35%)</label></li>
+          <li id="c24"><input type="checkbox" onchange="saveCheck('c24',this)"> <label onclick="toggleCheck('c24')">Thumbnail CTR baseline set after 3 days of data</label></li>
+          <li id="c25"><input type="checkbox" onchange="saveCheck('c25',this)"> <label onclick="toggleCheck('c25')">Channel description and tags optimized for discoverability</label></li>
+          <li id="c26"><input type="checkbox" onchange="saveCheck('c26',this)"> <label onclick="toggleCheck('c26')">daily-all.js configured with correct channels list</label></li>
+
+          <div class="week-label">Week 4 — Scheduling & Scale Prep</div>
+          <li id="c27"><input type="checkbox" onchange="saveCheck('c27',this)"> <label onclick="toggleCheck('c27')">Windows Task Scheduler / cron job set up to run daily-all.js every morning</label></li>
+          <li id="c28"><input type="checkbox" onchange="saveCheck('c28',this)"> <label onclick="toggleCheck('c28')">GCP billing alert set at $50 and $100/month</label></li>
+          <li id="c29"><input type="checkbox" onchange="saveCheck('c29',this)"> <label onclick="toggleCheck('c29')">Local file cleanup job running (delete renders after upload)</label></li>
+          <li id="c30"><input type="checkbox" onchange="saveCheck('c30',this)"> <label onclick="toggleCheck('c30')">YouTube Studio weekly review process established</label></li>
+          <li id="c31"><input type="checkbox" onchange="saveCheck('c31',this)"> <label onclick="toggleCheck('c31')">Script quality log started: track top-performing scripts by retention</label></li>
+          <li id="c32"><input type="checkbox" onchange="saveCheck('c32',this)"> <label onclick="toggleCheck('c32')">Channel 2 niche selected and config block created</label></li>
+          <li id="c33"><input type="checkbox" onchange="saveCheck('c33',this)"> <label onclick="toggleCheck('c33')">Channel 2 Google account and YouTube authorization completed</label></li>
+          <li id="c34"><input type="checkbox" onchange="saveCheck('c34',this)"> <label onclick="toggleCheck('c34')">Channel 2 first test video published successfully</label></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── 02 TOOL STACK ─────────────────────────────────────────────── -->
+    <div class="resource-section" id="section-tools">
+      <div class="resource-section-header" onclick="toggleSection('section-tools')">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div class="section-title-wrap">
+          <div class="section-num">02</div>
+          <div class="section-title">Tool Stack Reference</div>
+        </div>
+        <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="resource-section-body">
+        <div class="callout"><strong>Every tool you need, linked.</strong> Click the tool name to go directly to the signup or documentation page.</div>
+        <table class="tool-table">
+          <thead><tr><th>Tool</th><th>Role</th><th>Cost</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Claude (Anthropic)</strong></td><td>Script writing, metadata, thumbnail hooks</td><td><span class="cost-badge">~$5–30/mo</span></td><td><a href="https://console.anthropic.com" target="_blank" class="tool-link">console.anthropic.com →</a></td></tr>
+            <tr><td><strong>Google Cloud TTS</strong></td><td>Text-to-speech voiceover generation</td><td><span class="cost-badge">~$10–40/mo</span></td><td><a href="https://cloud.google.com/text-to-speech" target="_blank" class="tool-link">cloud.google.com →</a></td></tr>
+            <tr><td><strong>Google Cloud Speech</strong></td><td>Transcription for subtitle alignment</td><td><span class="cost-badge">~$5–15/mo</span></td><td><a href="https://cloud.google.com/speech-to-text" target="_blank" class="tool-link">cloud.google.com →</a></td></tr>
+            <tr><td><strong>Remotion</strong></td><td>Programmatic video rendering (React)</td><td><span class="cost-badge">Free / OSS</span></td><td><a href="https://remotion.dev" target="_blank" class="tool-link">remotion.dev →</a></td></tr>
+            <tr><td><strong>Flux 1.1 Pro (Replicate)</strong></td><td>AI thumbnail background images</td><td><span class="cost-badge">~$0.01–0.04/img</span></td><td><a href="https://replicate.com" target="_blank" class="tool-link">replicate.com →</a></td></tr>
+            <tr><td><strong>FFmpeg</strong></td><td>Audio processing & video conversion</td><td><span class="cost-badge">Free / OSS</span></td><td><a href="https://ffmpeg.org" target="_blank" class="tool-link">ffmpeg.org →</a></td></tr>
+            <tr><td><strong>@napi-rs/canvas</strong></td><td>Thumbnail composition (Node.js Canvas)</td><td><span class="cost-badge">Free / OSS</span></td><td><a href="https://github.com/Brooooooklyn/canvas" target="_blank" class="tool-link">GitHub →</a></td></tr>
+            <tr><td><strong>YouTube Data API v3</strong></td><td>Automated video upload with metadata</td><td><span class="cost-badge">Free tier</span></td><td><a href="https://console.cloud.google.com" target="_blank" class="tool-link">console.cloud.google.com →</a></td></tr>
+            <tr><td><strong>AWS S3</strong></td><td>Asset caching (optional)</td><td><span class="cost-badge">~$1–5/mo</span></td><td><a href="https://aws.amazon.com/s3" target="_blank" class="tool-link">aws.amazon.com →</a></td></tr>
+            <tr><td><strong>Bun</strong></td><td>Fast Node.js-compatible runtime</td><td><span class="cost-badge">Free / OSS</span></td><td><a href="https://bun.sh" target="_blank" class="tool-link">bun.sh →</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ── 03 PROMPT LIBRARY ─────────────────────────────────────────── -->
+    <div class="resource-section" id="section-prompts">
+      <div class="resource-section-header" onclick="toggleSection('section-prompts')">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="section-title-wrap">
+          <div class="section-num">03</div>
+          <div class="section-title">Prompt Library</div>
+        </div>
+        <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="resource-section-body">
+        <div class="callout"><strong>Copy and customize these prompts.</strong> Swap in your channel's niche, audience, and tone. These are the actual prompt structures used in the live system.</div>
+
+        <div class="prompt-card">
+          <div class="prompt-card-header">
+            <span class="prompt-card-title">Script Generation — System Prompt (Stoic/Philosophy Channel)</span>
+            <button class="copy-btn" onclick="copyPrompt(this, 'p1')">Copy</button>
+          </div>
+          <div class="prompt-body" id="p1">You are the writer behind a stoic philosophy YouTube channel. Your audience is men aged 25–45 who are high-performers feeling disconnected from meaning or struggling with modern distractions. Write in second person, direct, with the gravitas of Marcus Aurelius and the clarity of Ryan Holiday. No markdown, no headers, no bullets. Plain prose only. Each script must open with a question or observation that creates immediate tension. Target 800–1,200 words. Close with a specific behavioral challenge — not a philosophical abstraction. The viewer should finish the video knowing exactly one thing they can do differently today.</div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-card-header">
+            <span class="prompt-card-title">Script Generation — System Prompt (Finance/Investor Channel)</span>
+            <button class="copy-btn" onclick="copyPrompt(this, 'p2')">Copy</button>
+          </div>
+          <div class="prompt-body" id="p2">You are the writer for a stoic investor YouTube channel. Your audience is adults aged 30–55 who are actively managing investments and want to combine long-term thinking with sound financial principles. Write with calm authority — like a seasoned value investor who has seen multiple market cycles. No markdown, no headers. Plain prose only. Open every script with a specific financial behavior or belief that most investors have wrong. Target 800–1,200 words. Close with one concrete investment mindset shift the viewer can apply immediately. Never give specific stock picks. Focus on principles, patterns, and psychology.</div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-card-header">
+            <span class="prompt-card-title">Title Generation Prompt</span>
+            <button class="copy-btn" onclick="copyPrompt(this, 'p3')">Copy</button>
+          </div>
+          <div class="prompt-body" id="p3">Generate 3 YouTube title options for the following video script. Follow these rules exactly:
+
+1. Front-load the primary keyword in the first 40 characters
+2. Keep each title under 60 characters total
+3. At least 2 titles must target a specific search query a viewer would type
+4. At least 2 titles must use contrast format (X vs Y) or include a blind-spot threat
+5. Every title must work as a 4-word bold statement on a dark thumbnail background
+6. Do NOT write generic titles — every title must name a specific behavior the viewer is already doing
+
+Return a JSON object with this structure:
+{"titles": ["title1", "title2", "title3"], "recommended": 0}
+
+Script: [PASTE SCRIPT HERE]</div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-card-header">
+            <span class="prompt-card-title">Thumbnail Hook Prompt</span>
+            <button class="copy-btn" onclick="copyPrompt(this, 'p4')">Copy</button>
+          </div>
+          <div class="prompt-body" id="p4">Generate a thumbnail text hook for the following YouTube video title. The hook must be:
+- 4–6 words maximum
+- Bold and punchy — readable at mobile thumbnail size
+- Creates urgency, fear of missing out, or a blind-spot threat
+- Works as white bold text on a dark background
+- Does NOT repeat the title word-for-word
+
+Return only the hook text, nothing else.
+
+Video title: [PASTE TITLE HERE]</div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-card-header">
+            <span class="prompt-card-title">SEO Description + Tags Prompt</span>
+            <button class="copy-btn" onclick="copyPrompt(this, 'p5')">Copy</button>
+          </div>
+          <div class="prompt-body" id="p5">Generate a YouTube video description and tag set for the following video. 
+
+Description requirements:
+- 200–300 words
+- First 2 sentences must be compelling (shown in search results before "show more")
+- Include the primary keyword naturally in the first sentence
+- Include 3–5 secondary keywords throughout
+- End with a call to subscribe
+
+Tags requirements:
+- Exactly 30 tags
+- Mix of broad (3–4 words) and specific (5–8 words) phrases
+- Include the channel niche, topic keywords, and related search queries
+
+Return as JSON: {"description": "...", "tags": ["tag1", "tag2", ...]}
+
+Video title: [TITLE]
+Script summary: [2–3 sentence summary of the script]
+Channel niche: [YOUR NICHE]</div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-card-header">
+            <span class="prompt-card-title">Subtitle Generation Prompt (Claude-Estimated Timing)</span>
+            <button class="copy-btn" onclick="copyPrompt(this, 'p6')">Copy</button>
+          </div>
+          <div class="prompt-body" id="p6">Convert the following video script to SRT subtitle format. Assume 135 words per minute pacing. Use natural sentence breaks for subtitle cues. Keep each subtitle to 1–2 lines maximum, 42 characters per line maximum. Return ONLY the SRT content with no extra text, no explanation, no markdown.
+
+Script:
+[PASTE SCRIPT HERE]</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 04 NICHE TRACKER ──────────────────────────────────────────── -->
+    <div class="resource-section" id="section-niche">
+      <div class="resource-section-header" onclick="toggleSection('section-niche')">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><polyline points="3 20 21 20"/></svg>
+        </div>
+        <div class="section-title-wrap">
+          <div class="section-num">04</div>
+          <div class="section-title">Niche Research Tracker</div>
+        </div>
+        <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="resource-section-body">
+        <div class="callout"><strong>Use this as a reference</strong> when evaluating niches. CPM ranges are estimates based on AdSense data — your actual RPM will vary based on audience geography and channel age.</div>
+        <table class="niche-table">
+          <thead><tr><th>Niche</th><th>Est. CPM</th><th>Script Difficulty</th><th>Saturation</th><th>Verdict</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Value Investing</strong></td><td class="cpm-high">$12–$22</td><td>Medium</td><td>Medium</td><td>✅ Strong</td></tr>
+            <tr><td><strong>Personal Finance</strong></td><td class="cpm-high">$10–$18</td><td>Easy</td><td>High</td><td>✅ Good entry</td></tr>
+            <tr><td><strong>B2B / SaaS</strong></td><td class="cpm-high">$15–$30</td><td>Hard</td><td>Low</td><td>✅ High ceiling</td></tr>
+            <tr><td><strong>AI & Automation</strong></td><td class="cpm-high">$8–$18</td><td>Medium</td><td>Growing</td><td>✅ Strong now</td></tr>
+            <tr><td><strong>Stoic / Mindset</strong></td><td class="cpm-mid">$4–$9</td><td>Easy</td><td>Medium</td><td>⚡ Volume play</td></tr>
+            <tr><td><strong>Career Development</strong></td><td class="cpm-mid">$6–$12</td><td>Easy</td><td>Medium</td><td>⚡ Solid</td></tr>
+            <tr><td><strong>Health & Wellness</strong></td><td class="cpm-mid">$5–$10</td><td>Easy</td><td>Very High</td><td>⚡ Needs angle</td></tr>
+            <tr><td><strong>Faith / Biblical</strong></td><td class="cpm-mid">$3–$7</td><td>Easy</td><td>Low</td><td>⚡ Long game</td></tr>
+            <tr><td><strong>Gaming</strong></td><td class="cpm-low">$1–$3</td><td>Hard</td><td>Very High</td><td>❌ Avoid</td></tr>
+            <tr><td><strong>Entertainment / Clips</strong></td><td class="cpm-low">$1–$3</td><td>Easy</td><td>Very High</td><td>❌ Avoid</td></tr>
+            <tr><td><strong>Crypto Signals</strong></td><td class="cpm-low">$2–$5</td><td>Hard</td><td>High</td><td>❌ Avoid</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ── 05 PIPELINE LOG ───────────────────────────────────────────── -->
+    <div class="resource-section" id="section-pipeline">
+      <div class="resource-section-header" onclick="toggleSection('section-pipeline')">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="section-title-wrap">
+          <div class="section-num">05</div>
+          <div class="section-title">Pipeline Status Log</div>
+        </div>
+        <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="resource-section-body">
+        <div class="callout"><strong>Track each video through the pipeline.</strong> Use this as a reference for what each step produces so you know exactly where a video is at any point.</div>
+        <table class="pipeline-table">
+          <thead>
+            <tr>
+              <th>Step</th>
+              <th>Command</th>
+              <th>Input</th>
+              <th>Output</th>
+              <th>Est. Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>1. Research</strong></td><td><code>npm run research:topic</code></td><td>Config sources</td><td>topics.json</td><td>10–30s</td></tr>
+            <tr><td><strong>2. Select</strong></td><td><code>npm run select:topic</code></td><td>topics.json</td><td>selected-topic.json</td><td>5–15s</td></tr>
+            <tr><td><strong>3. Script</strong></td><td><code>npm run generate:script</code></td><td>selected-topic.json</td><td>script.txt + metadata.json</td><td>15–40s</td></tr>
+            <tr><td><strong>4. Audio</strong></td><td><code>npm run generate:audio</code></td><td>script.txt</td><td>audio.wav</td><td>5–20s</td></tr>
+            <tr><td><strong>5. Subtitles</strong></td><td><code>npm run generate:subtitles</code></td><td>audio.wav / script.txt</td><td>subtitles.srt</td><td>10–30s</td></tr>
+            <tr><td><strong>6. Assets</strong></td><td><code>npm run build:assets</code></td><td>subtitles.srt</td><td>manifest.json + scenes.json</td><td>5–10s</td></tr>
+            <tr><td><strong>7. Peaks</strong></td><td><code>npm run build:peaks</code></td><td>audio.wav</td><td>peaks.json</td><td>5–15s</td></tr>
+            <tr><td><strong>8. Render</strong></td><td><code>npm run render:video</code></td><td>All above</td><td>video.mp4</td><td>60–180s</td></tr>
+            <tr><td><strong>9. Thumbnail</strong></td><td><code>npm run thumbnail</code></td><td>metadata.json</td><td>thumbnail.png</td><td>15–45s</td></tr>
+            <tr><td><strong>10. Upload</strong></td><td><code>npm run upload</code></td><td>video.mp4 + thumbnail.png + metadata.json</td><td>YouTube URL</td><td>30–120s</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ── 06 RESOURCES ──────────────────────────────────────────────── -->
+    <div class="resource-section" id="section-resources">
+      <div class="resource-section-header" onclick="toggleSection('section-resources')">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <div class="section-title-wrap">
+          <div class="section-num">06</div>
+          <div class="section-title">Resource Links</div>
+        </div>
+        <svg class="section-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="resource-section-body">
+        <div class="resource-links-grid">
+          <a href="https://console.anthropic.com" target="_blank" class="resource-link-card">
+            <div class="resource-link-category">AI</div>
+            <div class="resource-link-title">Anthropic Console</div>
+            <div class="resource-link-desc">Get your API key, monitor usage, and manage Claude model access.</div>
+            <div class="resource-link-url">console.anthropic.com</div>
+          </a>
+          <a href="https://console.cloud.google.com" target="_blank" class="resource-link-card">
+            <div class="resource-link-category">Cloud</div>
+            <div class="resource-link-title">Google Cloud Console</div>
+            <div class="resource-link-desc">Enable APIs, create service accounts, manage credentials and billing.</div>
+            <div class="resource-link-url">console.cloud.google.com</div>
+          </a>
+          <a href="https://replicate.com" target="_blank" class="resource-link-card">
+            <div class="resource-link-category">AI Images</div>
+            <div class="resource-link-title">Replicate</div>
+            <div class="resource-link-desc">Run Flux 1.1 Pro for thumbnail backgrounds. Pay per generation.</div>
+            <div class="resource-link-url">replicate.com</div>
+          </a>
+          <a href="https://remotion.dev/docs" target="_blank" class="resource-link-card">
+            <div class="resource-link-category">Video</div>
+            <div class="resource-link-title">Remotion Documentation</div>
+            <div class="resource-link-desc">Full docs for setting up and rendering with Remotion.</div>
+            <div class="resource-link-url">remotion.dev/docs</div>
+          </a>
+          <a href="https://studio.youtube.com" target="_blank" class="resource-link-card">
+            <div class="resource-link-category">YouTube</div>
+            <div class="resource-link-title">YouTube Studio</div>
+            <div class="resource-link-desc">Monitor analytics, retention curves, CTR, and channel performance.</div>
+            <div class="resource-link-url">studio.youtube.com</div>
+          </a>
+          <a href="https://bun.sh" target="_blank" class="resource-link-card">
+            <div class="resource-link-category">Runtime</div>
+            <div class="resource-link-title">Bun</div>
+            <div class="resource-link-desc">Fast JavaScript runtime — recommended over Node.js for this pipeline.</div>
+            <div class="resource-link-url">bun.sh</div>
+          </a>
+          <a href="https://gumroad.com" target="_blank" class="resource-link-card">
+            <div class="resource-link-category">Monetize</div>
+            <div class="resource-link-title">Gumroad</div>
+            <div class="resource-link-desc">If you want to sell your own playbook or digital products.</div>
+            <div class="resource-link-url">gumroad.com</div>
+          </a>
+          <a href="https://advanedgeconsulting.com/digital-growth.html" target="_blank" class="resource-link-card">
+            <div class="resource-link-category">Done-For-You</div>
+            <div class="resource-link-title">Advanedge Digital Growth</div>
+            <div class="resource-link-desc">Want us to build and run this for you instead? See our managed service tiers.</div>
+            <div class="resource-link-url">advanedgeconsulting.com</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /resource-body -->
+
+  <footer class="resource-footer">
+    <p>© 2025 <a href="https://advanedgeconsulting.com">Advanedge Consulting</a> · This page is for paying customers only · Do not share your access password</p>
+  </footer>
+
+</div><!-- /main-content -->
+
+<script>
+  const PASS = 'advanedge997';
+
+  function checkPassword() {
+    const val = document.getElementById('password-input').value.trim();
+    if (val === PASS) {
+      document.getElementById('lock-screen').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+      loadChecks();
+    } else {
+      document.getElementById('lock-error').textContent = 'Incorrect password. Check your Gumroad receipt.';
+      document.getElementById('password-input').focus();
+    }
+  }
+
+  document.getElementById('password-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') checkPassword();
+  });
+
+  function toggleSection(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle('open');
+  }
+
+  // ── Checklist persistence (sessionStorage — no localStorage per policy)
+  function saveCheck(id, cb) {
+    const li = document.getElementById(id);
+    if (cb.checked) li.classList.add('checked');
+    else li.classList.remove('checked');
+    try {
+      const state = JSON.parse(sessionStorage.getItem('checks') || '{}');
+      state[id] = cb.checked;
+      sessionStorage.setItem('checks', JSON.stringify(state));
+    } catch(e) {}
+  }
+
+  function toggleCheck(id) {
+    const li = document.getElementById(id);
+    const cb = li.querySelector('input[type="checkbox"]');
+    cb.checked = !cb.checked;
+    saveCheck(id, cb);
+  }
+
+  function loadChecks() {
+    try {
+      const state = JSON.parse(sessionStorage.getItem('checks') || '{}');
+      for (const [id, checked] of Object.entries(state)) {
+        const li = document.getElementById(id);
+        if (!li) continue;
+        const cb = li.querySelector('input[type="checkbox"]');
+        if (cb) { cb.checked = checked; if (checked) li.classList.add('checked'); }
+      }
+    } catch(e) {}
+  }
+
+  // ── Copy prompt
+  function copyPrompt(btn, id) {
+    const text = document.getElementById(id).textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+</script>
+
+</body>
+</html>
