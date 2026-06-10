@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Advanedge Consulting</title>
+  <meta name="description" content="Get in touch with Advanedge Consulting. Fintech advisory for community banks and credit unions, and YouTube automation services for entrepreneurs." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact | Advanedge Consulting" />
+  <meta property="og:description" content="Reach out to discuss fintech advisory, lending modernization, or YouTube automation services." />
+  <meta property="og:url" content="https://advanedgeconsulting.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://advanedgeconsulting.com/assets/images/og-fintech.png" />
+  <link rel="canonical" href="https://advanedgeconsulting.com/contact.html" />
+
+  <link rel="icon" type="image/png" href="assets/images/logo-advanedge.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    .contact-hero {
+      background: var(--navy);
+      padding: 120px 40px 80px;
+      text-align: center;
+    }
+    .contact-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 4vw, 52px);
+      color: var(--white);
+      margin: 0 0 16px;
+      line-height: 1.2;
+    }
+    .contact-hero p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.7);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .contact-body {
+      background: var(--paper);
+      padding: 80px 40px 100px;
+    }
+    .contact-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* Left — options */
+    .contact-options h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: var(--navy);
+      margin: 0 0 8px;
+    }
+    .contact-options .sub {
+      font-size: 16px;
+      color: var(--muted);
+      margin: 0 0 40px;
+      line-height: 1.6;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      text-decoration: none;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .contact-card:hover {
+      box-shadow: 0 8px 32px rgba(10,22,40,0.1);
+      transform: translateY(-2px);
+    }
+    .contact-card-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--navy);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-card-icon svg { width: 20px; height: 20px; }
+    .contact-card-text h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 4px;
+    }
+    .contact-card-text p {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+    .contact-card-arrow {
+      margin-left: auto;
+      color: var(--gold);
+      flex-shrink: 0;
+      align-self: center;
+    }
+
+    /* Right — details */
+    .contact-details {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 40px;
+      color: var(--white);
+    }
+    .contact-details h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: var(--white);
+      margin: 0 0 8px;
+    }
+    .contact-details .sub {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      margin: 0 0 36px;
+      line-height: 1.6;
+    }
+    .contact-detail-row {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+    .contact-detail-row:last-child { margin-bottom: 0; }
+    .contact-detail-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(201,168,76,0.15);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-detail-icon svg { width: 16px; height: 16px; stroke: var(--gold); }
+    .contact-detail-text h4 {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.45);
+      margin: 0 0 4px;
+    }
+    .contact-detail-text a,
+    .contact-detail-text span {
+      font-size: 15px;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .contact-detail-text a:hover { color: var(--gold); }
+
+    .contact-divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin: 32px 0;
+    }
+
+    .contact-services {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .contact-service-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+    }
+    .contact-service-tag::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+      .contact-hero { padding: 100px 24px 60px; }
+      .contact-body { padding: 60px 24px 80px; }
+      .contact-details { padding: 32px 24px; }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRJESXGD65"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GRJESXGD65');
+  </script>
+</head>
+<body>
+
+  <!-- Announcement Banner -->
+  <div class="announcement-banner">
+    Now Accepting Advisory Engagements for 2026 —
+    <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">Book a Discovery Call</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo-advanedge.png" alt="Advanedge Consulting logo" />
+      Advanedge Consulting
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="digital-growth.html">Digital Growth</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#testimonials">Success Stories</a></li>
+      <li><a href="index.html#blog">Blog</a></li>
+      <li><a href="contact.html" class="nav-active">Contact</a></li>
+    </ul>
+    <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener" class="btn-nav">Book a Call</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html#services">Services</a>
+    <a href="digital-growth.html">Digital Growth</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#testimonials">Success Stories</a>
+    <a href="index.html#blog">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener" class="btn-nav">Book a Call</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <p class="section-label fade-loaded">Get in Touch</p>
+    <h1 class="fade-loaded">Let's Talk</h1>
+    <p class="fade-loaded">Whether you're evaluating a fintech platform, mid-implementation, or exploring YouTube automation — the right next step is a conversation.</p>
+  </section>
+
+  <!-- Contact Body -->
+  <section class="contact-body">
+    <div class="contact-inner">
+
+      <!-- Left: contact options -->
+      <div class="contact-options">
+        <h2>How Would You Like to Connect?</h2>
+        <p class="sub">Choose the option that works best for you. Most engagements start with a 30-minute discovery call.</p>
+
+        <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="contact-card-text">
+            <h3>Book a Discovery Call</h3>
+            <p>30 minutes on Calendly. No prep required — just show up with your questions.</p>
+          </div>
+          <div class="contact-card-arrow">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="2" y1="7" x2="12" y2="7"/><polyline points="8 3 12 7 8 11"/></svg>
+          </div>
+        </a>
+
+        <a href="mailto:info@advanedgeconsulting.com" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div class="contact-card-text">
+            <h3>Send an Email</h3>
+            <p>info@advanedgeconsulting.com — we respond within one business day.</p>
+          </div>
+          <div class="contact-card-arrow">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="2" y1="7" x2="12" y2="7"/><polyline points="8 3 12 7 8 11"/></svg>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mtellez2/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <div class="contact-card-text">
+            <h3>Connect on LinkedIn</h3>
+            <p>Follow Marvin Tellez for fintech insights and industry perspectives.</p>
+          </div>
+          <div class="contact-card-arrow">
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><line x1="2" y1="7" x2="12" y2="7"/><polyline points="8 3 12 7 8 11"/></svg>
+          </div>
+        </a>
+      </div>
+
+      <!-- Right: details -->
+      <div class="contact-details">
+        <h2>Advanedge Consulting</h2>
+        <p class="sub">Fintech advisory for community banks and credit unions. Digital growth services for entrepreneurs.</p>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div class="contact-detail-text">
+            <h4>Email</h4>
+            <a href="mailto:info@advanedgeconsulting.com">info@advanedgeconsulting.com</a>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="contact-detail-text">
+            <h4>Location</h4>
+            <span>Dallas–Fort Worth, TX<br/>Serving institutions nationwide</span>
+          </div>
+        </div>
+
+        <div class="contact-detail-row">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="contact-detail-text">
+            <h4>Schedule a Call</h4>
+            <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">calendly.com/marvin-advanedge/call</a>
+          </div>
+        </div>
+
+        <hr class="contact-divider" />
+
+        <p style="font-size:13px; color:rgba(255,255,255,0.45); text-transform:uppercase; letter-spacing:0.1em; margin:0 0 16px; font-weight:600;">Services</p>
+        <div class="contact-services">
+          <span class="contact-service-tag">Abrigo / Sageworks Advisory</span>
+          <span class="contact-service-tag">LOS Implementation Advisory</span>
+          <span class="contact-service-tag">Lending Modernization Assessment</span>
+          <span class="contact-service-tag">AI Enablement for Lending</span>
+          <span class="contact-service-tag">YouTube Automation (Digital Growth)</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/images/logo-advanedge.png" alt="Advanedge logo" />
+          Advanedge Consulting
+        </div>
+        <p class="footer-tagline">Fintech Advisory &amp; Digital Growth Services</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#how-we-work">RFP Advisory</a></li>
+          <li><a href="index.html#how-we-work">Implementation Advisory</a></li>
+          <li><a href="services/abrigo-sageworks.html">Abrigo &amp; Sageworks</a></li>
+          <li><a href="services/lending-modernization-assessment.html">Modernization Assessment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">Book a Call</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <div><a href="mailto:info@advanedgeconsulting.com">info@advanedgeconsulting.com</a></div>
+          <div><a href="https://www.advanedgeconsulting.com" target="_blank" rel="noopener">www.advanedgeconsulting.com</a></div>
+          <div><a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">calendly.com/marvin-advanedge/call</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Advanedge Consulting. All rights reserved.</span>
+      <div>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="legal-notice.html">Legal Notice</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      let delay = 0;
+      document.querySelectorAll('.fade-loaded').forEach(el => {
+        setTimeout(() => el.classList.add('loaded'), delay);
+        delay += 150;
+      });
+    });
+  </script>
+</body>
+</html>

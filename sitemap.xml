@@ -1,33 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core pages -->
   <url>
     <loc>https://advanedgeconsulting.com/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://advanedgeconsulting.com/digital-growth.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://advanedgeconsulting.com/contact.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Service pages -->
+  <url>
+    <loc>https://advanedgeconsulting.com/services/abrigo-sageworks.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://advanedgeconsulting.com/services/lending-modernization-assessment.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Blog posts -->
+  <url>
     <loc>https://advanedgeconsulting.com/blog/loan-origination-system-implementation.html</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://advanedgeconsulting.com/blog/ai-in-fintech-beyond-the-hype.html</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://advanedgeconsulting.com/blog/5-ways-fintech-is-revolutionizing-financial-services.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://advanedgeconsulting.com/blog/youtube-automation-why-you-need-a-vendor.html</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
+
+  <!-- Legal -->
   <url>
     <loc>https://advanedgeconsulting.com/legal-notice.html</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
 </urlset>
