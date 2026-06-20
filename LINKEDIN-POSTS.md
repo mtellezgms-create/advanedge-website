@@ -96,7 +96,7 @@ Article in comments ↓
 
 We're almost halfway through 2026.
 
-For community banks and credit unions, that makes now the right time to ask one question: is your Abrigo/Sageworks platform delivering everything you expected when you bought it?
+For community banks and credit unions, that makes it the natural moment to take a fresh look at your lending operations — because most institutions are sitting on more capability than they're currently using.
 
 The institutions getting the most out of theirs this year share something in common — they stopped treating modernization as a one-time IT project and started treating it as an operational priority. Workflows get revisited. Integrations get tightened. AI moves from conversation to deployment.
 
