@@ -87,6 +87,73 @@ Article in comments ↓
 
 ---
 
+## WEEK OF JUNE 23 — June 23 & 25, 2026
+
+> Images: assets/images/linkedin/post-tue-jun23-*.png and post-thu-jun25-*.png
+> Schedule: Tue June 23 (Fintech 9am, Digital Growth 5pm) · Thu June 25 (Fintech 9am, Digital Growth 5pm)
+
+### Tuesday June 23 — FINTECH
+
+We're almost halfway through 2026.
+
+For community banks and credit unions, that makes now the right time to ask one question: is your Abrigo/Sageworks platform delivering everything you expected when you bought it?
+
+The institutions getting the most out of theirs this year share something in common — they stopped treating modernization as a one-time IT project and started treating it as an operational priority. Workflows get revisited. Integrations get tightened. AI moves from conversation to deployment.
+
+If the second half of 2026 is when your institution gets serious about its lending technology, that's exactly the work we do.
+
+→ advanedgeconsulting.com/services/lending-modernization-assessment.html
+
+---
+
+### Tuesday June 23 — DIGITAL GROWTH
+
+The #1 reason faceless YouTube channels fail isn't the niche.
+
+It's inconsistency.
+
+Most people start strong — a burst of videos, decent thumbnails, real momentum. Then life happens. Publishing slips from weekly to whenever. The algorithm notices before the audience does, and the channel stalls right before it would have gained traction.
+
+A channel that publishes on schedule, every week, with reasonable quality beats a "better" channel that posts in unpredictable bursts. Every time.
+
+That's the whole reason done-for-you automation works: the pipeline runs on a schedule, not on your motivation.
+
+→ advanedgeconsulting.com/digital-growth.html
+
+---
+
+### Thursday June 25 — FINTECH
+
+The smoothest Abrigo go-lives I've been part of all shared three things:
+
+1. Executive ownership. Not "IT owns this" — a leader with real decision authority stayed engaged from kickoff through go-live.
+
+2. Workflows mapped before configuration. The institution documented how it actually operates — including the workarounds — before anyone touched a setting.
+
+3. A plan for day 91. The first 90 days post-go-live surface the real questions. The institutions that planned for that period came out ahead.
+
+None of this is about the platform. Abrigo gives you a powerful system. These are the things that determine whether your institution gets everything out of it.
+
+→ advanedgeconsulting.com
+
+---
+
+### Thursday June 25 — DIGITAL GROWTH
+
+If you want a passive income asset in 2026, which should you build — a blog, a podcast, or a YouTube channel?
+
+Blogs depend on Google and take 12–18 months to rank, and AI is reshaping search.
+
+Podcasts are great for authority, but discovery is brutal — almost no engine pushes new listeners to you.
+
+YouTube is the only one of the three with a recommendation engine built to put your content in front of new viewers — and it pays directly through AdSense once monetized.
+
+For a faceless, passive income asset, YouTube wins on distribution, monetization, and scale. It's why we build channels, not blogs.
+
+→ advanedgeconsulting.com/digital-growth.html
+
+---
+
 ## CONTENT CALENDAR — June through September 2026
 
 | Date | Day | Line | Topic |
