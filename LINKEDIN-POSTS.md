@@ -91,6 +91,7 @@ Article in comments ↓
 
 > Images: assets/images/linkedin/post-tue-jun23-*.png and post-thu-jun25-*.png
 > Schedule: Tue June 23 (Fintech 9am, Digital Growth 5pm) · Thu June 25 (Fintech 9am, Digital Growth 5pm)
+> FORMAT: Publish everything down to "FIRST COMMENT" as the post — NO link in the body. Then paste the FIRST COMMENT line as your first comment right after publishing (keeps LinkedIn reach high).
 
 ### Tuesday June 23 — FINTECH
 
@@ -102,7 +103,8 @@ The institutions getting the most out of theirs this year share something in com
 
 If the second half of 2026 is when your institution gets serious about its lending technology, that's exactly the work we do.
 
-→ advanedgeconsulting.com/services/lending-modernization-assessment.html
+**FIRST COMMENT** (paste right after publishing):
+For anyone who wants to see what that looks like — here's the Lending Modernization Assessment: advanedgeconsulting.com/services/lending-modernization-assessment.html
 
 ---
 
@@ -118,7 +120,8 @@ A channel that publishes on schedule, every week, with reasonable quality beats 
 
 That's the whole reason done-for-you automation works: the pipeline runs on a schedule, not on your motivation.
 
-→ advanedgeconsulting.com/digital-growth.html
+**FIRST COMMENT** (paste right after publishing):
+If you'd rather own the channel than run it, here's how it works: advanedgeconsulting.com/digital-growth.html
 
 ---
 
@@ -134,7 +137,8 @@ The smoothest Abrigo go-lives I've been part of all shared three things:
 
 None of this is about the platform. Abrigo gives you a powerful system. These are the things that determine whether your institution gets everything out of it.
 
-→ advanedgeconsulting.com
+**FIRST COMMENT** (paste right after publishing):
+This is the work we do every day — more on our Abrigo/Sageworks practice here: advanedgeconsulting.com/services/abrigo-sageworks.html
 
 ---
 
@@ -150,7 +154,8 @@ YouTube is the only one of the three with a recommendation engine built to put y
 
 For a faceless, passive income asset, YouTube wins on distribution, monetization, and scale. It's why we build channels, not blogs.
 
-→ advanedgeconsulting.com/digital-growth.html
+**FIRST COMMENT** (paste right after publishing):
+If a faceless YouTube channel is on your radar, here's how we build them: advanedgeconsulting.com/digital-growth.html
 
 ---
 
