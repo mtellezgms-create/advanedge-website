@@ -7,6 +7,26 @@
 
 ---
 
+## POSTING WORKFLOW (read first)
+
+**1. Post from your PERSONAL profile, not the company page.**
+Personal profiles get 5–10x the organic reach of company pages on LinkedIn. Your network engages with you, not a logo. Every post here is written in your first-person voice for exactly this reason.
+
+**2. Then reshare to the Advanedge company page.**
+Personal profile = the engine (reach + engagement). Company page = the archive/credibility layer a prospect sees when they check you out. Low reach there, but worth the consistent feed.
+
+**3. Keep the post body link-free; put the link in the FIRST COMMENT.**
+LinkedIn reduces reach on posts with an outbound link in the body. Publish the body clean, then paste the FIRST COMMENT line (with the link) right after publishing.
+
+**4. Timing — both audiences, 8 hours apart:**
+- Fintech → Tuesday & Thursday, 9:00 AM CST (when CIOs/CLOs/lending execs browse)
+- Digital Growth → Tuesday & Thursday, 5:00 PM CST (when entrepreneurs/investors browse)
+
+**5. Digital Growth audience note.**
+Your network skews banking, so YouTube-automation posts won't perfectly match it — still post from personal (reach beats targeting), and add 2–3 hashtags (#PassiveIncome #YouTubeAutomation #FacelessYouTube) to reach beyond your immediate network. A separate dedicated Digital Growth page is the future move only if it becomes a major push.
+
+---
+
 ## WEEK 1 — June 2 & 4, 2026
 
 ### Tuesday June 2 — FINTECH
