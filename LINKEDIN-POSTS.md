@@ -113,6 +113,18 @@ Article in comments ↓
 > Schedule: Tue June 23 (Fintech 9am, Digital Growth 5pm) · Thu June 25 (Fintech 9am, Digital Growth 5pm)
 > FORMAT: Publish everything down to "FIRST COMMENT" as the post — NO link in the body. Then paste the FIRST COMMENT line as your first comment right after publishing (keeps LinkedIn reach high).
 
+### Monday June 22 — WARM-UP (text only — no link, no image · post ~12–1pm CST)
+
+Most lending teams don't need new technology.
+
+They need to get full value from the technology they already have.
+
+After 26 years inside financial institutions, that's the pattern I keep seeing — the capability is already there, waiting to be used.
+
+Bankers and credit union folks in my network: are you seeing the same thing?
+
+---
+
 ### Tuesday June 23 — FINTECH
 
 We're almost halfway through 2026.
