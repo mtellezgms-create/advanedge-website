@@ -118,6 +118,7 @@ Domain:    advanedgeconsulting.com
 - **No emojis** in code output, commit messages, or written content
 - When creating files, write them complete — avoid TODO placeholders unless explicitly flagged
 - If you're unsure about a creative decision, propose options rather than picking silently
+- **LinkedIn post copy** goes in `LINKEDIN-POSTS.md` (append a new `## WEEK OF <date>` section, matching the existing format). **LinkedIn images** go in `assets/images/linkedin/`, named `post-{tue|thu}-{mon}{day}-{fintech|digital-growth}.png` to match existing files.
 
 ## Open Work Items
 

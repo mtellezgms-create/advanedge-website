@@ -201,6 +201,96 @@ If a faceless YouTube channel is on your radar, here's how we build them: advane
 
 ---
 
+## WEEK OF JULY 14 — July 14 & 16, 2026
+
+> Images: assets/images/linkedin/post-tue-jul14-*.png and post-thu-jul16-*.png
+> Schedule: Tue July 14 (Fintech 7:30am, Digital Growth 5pm) · Thu July 16 (Fintech 7:30am, Digital Growth 5pm)
+> FORMAT: Publish everything down to "FIRST COMMENT" as the post — NO link in the body. Then paste the FIRST COMMENT line as your first comment right after publishing.
+
+### Tuesday July 14 — FINTECH
+
+What $100B+ in Lending Transformations Taught Me
+
+Add up every lending transformation I've been part of, and the total crosses $100 billion in loan operations.
+
+The lesson that stuck with me wasn't about scale. It was about sequencing.
+
+At that size, every workflow change ripples through dozens of departments at once. The institutions that got it right didn't move faster — they moved in the right order: governance and data standards first, core and LOS configuration second, staff enablement third. Skip a step, and you don't save time. You just move the rework to a more expensive phase later.
+
+Community banks and credit unions don't operate at $100B scale, but the sequencing principle doesn't change with size. It just compounds faster when you get it wrong.
+
+That's the same discipline we bring to institutions a fraction of that size — the order of operations matters just as much at $500M as it does at $5B.
+
+#Abrigo #CommunityBanking #CreditUnions #LendingModernization
+
+**FIRST COMMENT** (paste right after publishing):
+More on how we structure an engagement: advanedgeconsulting.com/services/lending-modernization-assessment.html
+
+---
+
+### Tuesday July 14 — DIGITAL GROWTH
+
+Every client asks the same question first: what niche should my channel be in?
+
+The honest answer is never "whatever you're passionate about." That's how most people start channels — and it's a big reason so many stall before they ever earn a dollar.
+
+We look at three things before locking in a niche: the RPM ceiling (some niches pay $2 per thousand views, others pay $15 or more, for the same production effort), whether there's enough source material to sustain weekly uploads for years rather than months, and where the existing channels in that space are thin or stale.
+
+Only after a niche clears those three does scripting and design start. Passion is optional. The economics aren't.
+
+Stoic Reflections — one of the channels in our network — came out of exactly this process, not a personal interest in Stoicism.
+
+If you're weighing a niche for your own channel, happy to run it through the same filter.
+
+#YouTubeAutomation #FacelessYouTube #DigitalGrowth #ContentStrategy
+
+**FIRST COMMENT** (paste right after publishing):
+Here's how we build and run channels end to end: advanedgeconsulting.com/digital-growth.html
+
+---
+
+### Thursday July 16 — FINTECH
+
+The regret I hear most after go-live isn't about the software.
+
+It's almost always about data.
+
+Every institution says their data is "clean enough" going in. The ones who wish they'd done things differently all point to the same moment: the migration where duplicate records, inconsistent field mapping, or years of manual workarounds got carried straight into the new system instead of being resolved first.
+
+Bad data doesn't break a go-live. It shows up quietly, three or four months later — a report that doesn't reconcile, a workflow that behaves differently than expected, a compliance exception nobody can explain.
+
+By then it's not a data problem anymore. It's a trust problem. Staff stop believing the system, and the old workarounds creep back in.
+
+The institutions that avoid this treat data cleanup as its own project phase, with its own owner and its own timeline, before configuration ever starts.
+
+If your team is heading into an implementation, that's the conversation worth having early.
+
+#Abrigo #CommunityBanking #CreditUnions #LendingModernization
+
+**FIRST COMMENT** (paste right after publishing):
+More on how the assessment works: advanedgeconsulting.com/services/lending-modernization-assessment.html
+
+---
+
+### Thursday July 16 — DIGITAL GROWTH
+
+What does a monetized channel actually earn? Real numbers, not guru hype.
+
+Once a channel clears the YouTube Partner Program threshold — 1,000 subscribers and 4,000 watch hours — the earnings range is wide, and niche is what separates the two ends of it.
+
+A small channel in a low-RPM niche might see $100–$500 a month. A well-run channel in a high-RPM niche like finance, business, or tech can clear $2,000–$15,000 a month once it compounds. Ad revenue is only part of it — sponsorships and affiliate income typically outpace AdSense once a channel has real watch-time history behind it.
+
+Our own network is still building toward that milestone across five channels — 36,000+ views and counting. We track it openly with clients for exactly this reason: passive income from a channel is real, but it's not instant, and anyone telling you otherwise is selling something.
+
+Curious what a realistic timeline and range look like for your niche?
+
+#YouTubeAutomation #FacelessYouTube #PassiveIncome #DigitalGrowth
+
+**FIRST COMMENT** (paste right after publishing):
+Here's how the six-month build actually goes: advanedgeconsulting.com/digital-growth.html
+
+---
+
 ## CONTENT CALENDAR — June through September 2026
 
 | Date | Day | Line | Topic |
