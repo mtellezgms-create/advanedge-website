@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What $100B+ in Lending Transformations Taught Me About Sequencing | Advanedge Consulting</title>
+  <meta name="description" content="Across two decades of lending transformations totaling more than $100 billion, the lesson that mattered most was never about scale. It was about the order of operations." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="What $100B+ in Lending Transformations Taught Me About Sequencing" />
+  <meta property="og:description" content="Scale wasn't the lesson. The institutions that got it right moved in the right order — and the ones that didn't paid for it later, at a much higher cost." />
+  <meta property="og:url" content="https://advanedgeconsulting.com/blog/what-100b-in-transformations-taught-me" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://advanedgeconsulting.com/assets/images/og-fintech.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://advanedgeconsulting.com/assets/images/og-fintech.png" />
+  <link rel="canonical" href="https://advanedgeconsulting.com/blog/what-100b-in-transformations-taught-me.html" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What $100B+ in Lending Transformations Taught Me About Sequencing",
+    "description": "Across two decades of lending transformations totaling more than $100 billion, the lesson that mattered most was never about scale. It was about the order of operations.",
+    "author": { "@type": "Person", "name": "Marvin Tellez" },
+    "publisher": { "@type": "Organization", "name": "Advanedge Consulting", "url": "https://advanedgeconsulting.com" },
+    "datePublished": "2026-07-14",
+    "url": "https://advanedgeconsulting.com/blog/what-100b-in-transformations-taught-me"
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="../assets/images/logo-advanedge.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    .blog-hero { background: var(--navy); padding: 120px 40px 80px; text-align: center; }
+    .blog-hero .section-label { margin-bottom: 20px; }
+    .blog-hero-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 48px); color: var(--white); line-height: 1.25; max-width: 840px; margin: 0 auto 24px; }
+    .blog-meta { display: flex; align-items: center; justify-content: center; gap: 24px; font-size: 14px; color: rgba(255,255,255,0.55); flex-wrap: wrap; }
+    .blog-meta span { display: flex; align-items: center; gap: 6px; }
+    .blog-content-wrap { background: #ffffff; }
+    .blog-body { max-width: 780px; margin: 0 auto; padding: 72px 40px 100px; }
+    .blog-body p { font-size: 17px; line-height: 1.85; color: #2a3548; margin-bottom: 24px; }
+    .blog-body h2 { font-family: 'Playfair Display', serif; font-size: clamp(22px, 2.8vw, 30px); color: var(--navy); margin: 56px 0 20px; line-height: 1.3; }
+    .blog-body h3 { font-family: 'Source Sans Pro', sans-serif; font-size: 19px; font-weight: 700; color: var(--navy); margin: 36px 0 12px; }
+    .blog-body ul, .blog-body ol { margin: 0 0 28px 0; padding-left: 24px; }
+    .blog-body li { font-size: 17px; line-height: 1.8; color: #2a3548; margin-bottom: 10px; }
+    .blog-body strong { color: var(--navy); }
+    .blog-callout { background: #f4f6fa; border-left: 4px solid var(--gold); padding: 28px 32px; border-radius: 0 8px 8px 0; margin: 40px 0; }
+    .blog-callout p { margin: 0; font-size: 17px; font-style: italic; color: var(--navy); }
+    .blog-stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 40px 0; }
+    .blog-stat-box { background: var(--navy); border-radius: 10px; padding: 28px 20px; text-align: center; }
+    .blog-stat-box .num { display: block; font-family: 'Playfair Display', serif; font-size: 34px; color: var(--gold); font-weight: 700; margin-bottom: 8px; }
+    .blog-stat-box .label { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.4; }
+    .blog-divider { border: none; border-top: 1px solid #e0e4ed; margin: 56px 0; }
+    .blog-author-box { display: flex; gap: 24px; align-items: flex-start; background: #f4f6fa; border-radius: 12px; padding: 32px; margin: 64px 0 0; }
+    .blog-author-box img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .blog-author-box h4 { font-size: 16px; font-weight: 700; color: var(--navy); margin: 0 0 4px; }
+    .blog-author-box p { font-size: 14px !important; color: #5a6478 !important; margin: 0 !important; line-height: 1.6 !important; }
+    .blog-cta-box { background: var(--navy); border-radius: 16px; padding: 48px 40px; text-align: center; margin: 56px 0 0; }
+    .blog-cta-box h3 { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--white); margin: 0 0 12px; }
+    .blog-cta-box p { color: rgba(255,255,255,0.65) !important; font-size: 16px !important; margin: 0 0 28px !important; }
+    @media (max-width: 700px) {
+      .blog-body { padding: 48px 24px 80px; }
+      .blog-hero { padding: 100px 24px 60px; }
+      .blog-stat-row { grid-template-columns: 1fr; }
+      .blog-author-box { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="announcement-banner">
+    Now Accepting Advisory Engagements for 2026 —
+    <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">Book a Discovery Call</a>
+  </div>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/logo-advanedge.png" alt="Advanedge Consulting logo" />
+      Advanedge Consulting
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#services">Services</a></li>
+      <li><a href="../digital-growth.html">Digital Growth</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#testimonials">Success Stories</a></li>
+      <li><a href="../index.html#blog">Blog</a></li>
+      <li><a href="../index.html#footer">Contact</a></li>
+    </ul>
+    <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener" class="btn-nav">Book a Call</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html#services">Services</a>
+    <a href="../digital-growth.html">Digital Growth</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#testimonials">Success Stories</a>
+    <a href="../index.html#blog">Blog</a>
+    <a href="../index.html#footer">Contact</a>
+    <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener" class="btn-nav">Book a Call</a>
+  </div>
+
+  <section class="blog-hero">
+    <p class="section-label">Fintech Insights</p>
+    <h1 class="blog-hero-title">What $100B+ in Lending Transformations Taught Me About Sequencing</h1>
+    <div class="blog-meta">
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        7 min read
+      </span>
+      <span>By Marvin Tellez</span>
+      <span>July 14, 2026</span>
+      <span>Lending Modernization · Abrigo · Implementation</span>
+    </div>
+  </section>
+
+  <div class="blog-content-wrap">
+  <article class="blog-body">
+
+    <p>Add up every lending transformation I've been part of over 26 years, and the total crosses $100 billion in loan operations — including a single $85 billion institution at the upper end, and community banks and credit unions with a fraction of that footprint at the other.</p>
+
+    <p>When people hear that number, they usually ask about scale: what's different about running a transformation that large? It's a reasonable question, and it's the wrong one. The lesson that stuck with me across two decades of this work was never about size. It was about sequencing.</p>
+
+    <p>The institutions that got the most out of their lending transformation — at any size — didn't move faster than everyone else. They moved in the right order. The ones that struggled almost always did the same work, just out of sequence, and paid for it later at a much higher cost.</p>
+
+    <div class="blog-stat-row">
+      <div class="blog-stat-box">
+        <span class="num">$100B+</span>
+        <span class="label">in cumulative lending operations transformed across engagements</span>
+      </div>
+      <div class="blog-stat-box">
+        <span class="num">3</span>
+        <span class="label">phases every clean sequence follows, in the same order, every time</span>
+      </div>
+      <div class="blog-stat-box">
+        <span class="num">Day 91</span>
+        <span class="label">when skipped steps resurface as rework — right after the go-live excitement fades</span>
+      </div>
+    </div>
+
+    <h2>Why Sequencing Beats Speed</h2>
+
+    <p>At any meaningful scale, a lending transformation isn't one project. It's dozens of interdependent workstreams touching credit, operations, compliance, IT, and frontline staff at the same time. Every one of those workstreams reacts to a workflow change — and if the change lands on a foundation that isn't ready for it, the reaction is rework, not progress.</p>
+
+    <p>Institutions under pressure to show momentum often default to moving on every front at once: configure the platform, train the staff, and clean up the data all in parallel, because parallel feels faster. It rarely is. Configuration built on unresolved data assumptions gets rebuilt. Staff trained on a workflow that changes again two weeks later stop trusting the training. The appearance of speed early in the project becomes the source of the delay later in it.</p>
+
+    <div class="blog-callout">
+      <p>"The institutions that finished ahead of schedule weren't the ones who started the most things at once. They were the ones who finished each phase before the next one depended on it."</p>
+    </div>
+
+    <h2>The Three-Phase Framework</h2>
+
+    <p>Across engagements of every size, the sequence that consistently works breaks into three phases — and each one has to be substantially resolved before the next one begins.</p>
+
+    <h3>Phase 1: Governance and Data Standards</h3>
+    <p>Before a single screen gets configured, the institution needs agreement on how data is defined, owned, and governed — chart of accounts logic, exception handling rules, who has authority to approve a workflow exception, and what "clean" actually means for the records moving into the new system. This phase is the least visible and the most skipped, because it produces no demo-able progress. It's also the phase that determines whether everything built afterward holds up.</p>
+
+    <h3>Phase 2: Core and LOS Configuration</h3>
+    <p>Only once governance and data standards are settled does configuration start. This is where the platform gets built to match how the institution actually operates — not how it operated five workarounds ago. Configuration done on a stable data foundation goes fast, because the team isn't re-litigating definitions mid-build. Configuration done ahead of that foundation goes fast at first and slow later, when the rework starts.</p>
+
+    <h3>Phase 3: Staff Enablement</h3>
+    <p>Training comes last, and it comes once, on a system that isn't going to meaningfully change under the trainee's feet. Enablement done early, against a configuration still in flux, produces staff who quietly build their own workarounds to cope with what they were taught not matching what they see. Those workarounds are exactly what the transformation was supposed to eliminate — and they're far harder to unwind once people have grown to rely on them.</p>
+
+    <h2>What Happens When You Skip a Step</h2>
+
+    <p>Skipping a phase doesn't save the time it looks like it saves. It moves the same work to a later, more expensive point in the project — usually day 91, the stretch right after go-live once the deployment energy wears off and the real operational questions start surfacing.</p>
+
+    <p>By day 91, a data problem isn't a data problem anymore. It's a trust problem: a report that won't reconcile, a workflow that behaves differently than staff expected, an exception nobody can explain. Fixing it now means unwinding decisions that are already live, already trained on, and already load-bearing for daily operations. The same fix that would have taken a week in Phase 1 can take a quarter once it's been built on top of.</p>
+
+    <h2>This Isn't a Scale Problem</h2>
+
+    <p>Community banks and credit unions don't run $85 billion transformations. But the sequencing principle doesn't change with size — it just compounds faster when it's ignored, because smaller institutions have less staff redundancy to absorb the rework and less time before the next audit or exam cycle arrives.</p>
+
+    <p>The order of operations matters just as much at $500 million as it does at $85 billion. The only thing that changes with scale is how loudly the consequences announce themselves when the order gets skipped.</p>
+
+    <h2>Building the Sequence Into Your Own Transformation</h2>
+
+    <p>A few principles carry across every engagement, regardless of institution size:</p>
+
+    <ul>
+      <li><strong>Resolve governance before you configure.</strong> If your team can't yet agree on what "clean data" means for a given field, that's a Phase 1 conversation, not a Phase 2 workaround.</li>
+      <li><strong>Don't demo progress you'll have to rebuild.</strong> Configuration that looks finished but sits on an unstable data foundation isn't ahead of schedule — it's debt with a delayed due date.</li>
+      <li><strong>Train once, on something stable.</strong> If your configuration is still changing, your training calendar is premature.</li>
+      <li><strong>Plan for day 91 from day one.</strong> Build a review checkpoint roughly three months post-go-live specifically to catch what only shows up under real operating conditions.</li>
+      <li><strong>Give each phase an owner, not just a deadline.</strong> Sequencing breaks down fastest when everyone is accountable for the timeline and no one is accountable for the order.</li>
+    </ul>
+
+    <hr class="blog-divider" />
+
+    <p>None of this is a case against moving quickly. It's a case for moving in order. The $100 billion figure is just an accumulation of engagements — the discipline underneath it is the same whether the institution is managing $500 million in loan operations or $85 billion.</p>
+
+    <p>Get the sequence right, and scale becomes a matter of degree, not difficulty.</p>
+
+    <div class="blog-author-box">
+      <img src="../assets/images/headshot-marvin-tellez.jpg" alt="Marvin Tellez" />
+      <div>
+        <h4>Marvin Tellez — Founder, Advanedge Consulting</h4>
+        <p>Marvin is a fintech strategy leader with 26 years inside financial institutions and deep operator-level experience across the Abrigo/Sageworks ecosystem — including LOS implementation, Jack Henry integration, and AI-enabled lending operations. Based in Dallas-Fort Worth, he helps community banks and credit unions get the most out of their lending technology nationwide.</p>
+      </div>
+    </div>
+
+    <div class="blog-cta-box">
+      <h3>Planning a Lending Transformation?</h3>
+      <p>Let's map the sequence before you configure anything — the Modernization Assessment is built to do exactly that.</p>
+      <a href="../services/lending-modernization-assessment.html" class="btn-primary">See the Modernization Assessment</a>
+    </div>
+
+  </article>
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <img src="../assets/images/logo-advanedge.png" alt="Advanedge logo" />
+          Advanedge Consulting
+        </div>
+        <p class="footer-tagline">Fintech Advisory for Community Banks &amp; Credit Unions</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="../index.html#how-we-work">RFP Advisory</a></li>
+          <li><a href="../index.html#how-we-work">Implementation Advisory</a></li>
+          <li><a href="../index.html#how-we-work">Post-Implementation</a></li>
+          <li><a href="../index.html#services">AI Enablement</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#blog">Blog</a></li>
+          <li><a href="mailto:info@advanedgeconsulting.com">Contact</a></li>
+          <li><a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">Book a Call</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <div><a href="mailto:info@advanedgeconsulting.com">info@advanedgeconsulting.com</a></div>
+          <div><a href="https://www.advanedgeconsulting.com" target="_blank" rel="noopener">www.advanedgeconsulting.com</a></div>
+          <div><a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">calendly.com/marvin-advanedge/call</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Advanedge Consulting. All rights reserved.</span>
+      <div>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../legal-notice.html">Legal Notice</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
