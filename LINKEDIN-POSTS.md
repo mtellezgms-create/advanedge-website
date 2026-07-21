@@ -323,7 +323,7 @@ The real gate is the YouTube Partner Program — 1,000 subscribers and 4,000 wat
 
 Realistic timeline for a well-run faceless channel, publishing weekly without gaps: 6–9 months to clear that threshold. Niches with a large existing audience move faster; narrower niches take longer but often monetize higher once they're in.
 
-Stoic Reflections, one of the channels in our network, is at 113 subscribers and 33K+ views right now — on pace, not overnight. That's what the honest version of this looks like: steady growth from consistent publishing, not a viral spike.
+Stoic Reflections, one of the channels in our network, is at 129 subscribers and 35.6K+ views right now — on pace, not overnight. That's what the honest version of this looks like: steady growth from consistent publishing, not a viral spike.
 
 Anyone telling you 1,000 subscribers in a month is either lucky or not telling you the full story.
 
