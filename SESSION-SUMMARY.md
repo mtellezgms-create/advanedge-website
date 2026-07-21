@@ -1,7 +1,7 @@
 # Advanedge Website — Project Summary
 
-**Last session:** June 1, 2026 (Sunday night)
-**Status:** 100% deploy-ready. Deploying tonight, posting Tuesday June 2.
+**Last session:** July 21, 2026
+**Status:** Live and running. Site launched June 2026, LinkedIn content calendar active through September, blog and Digital Growth channel portfolio current.
 
 ---
 
@@ -34,22 +34,30 @@ Pure HTML/CSS/vanilla JS. Hosted on GitHub Pages, custom domain `advanedgeconsul
 
 ---
 
-## Completed This Session
+## Completed — Launch Session (June 1, 2026)
 
 - **Pushed entire site to GitHub** (new public repo, gh CLI authenticated)
 - **Calendly logo** — cropped + branded version uploaded to Marvin's Calendly account
 - **Two SEO blog posts** — long-form, schema markup, OG tags, author boxes, CTAs
 - **OG share images** — `og-fintech.png` + `og-digital-growth.png` (1200x630)
 - **Removed logo watermark** from Digital Growth hero, matched dot pattern to homepage
-- **Live channel portfolio** added to Digital Growth page — 5 real channels with stats:
-  - Stoic Reflections (113 subs, 33K views), The Machine Whisperer (27 subs, 1.1K),
-    Advanedge Consulting AI (15 subs, 1.6K), Biblical Wisdom Unearthed (6 subs, 738),
-    Stoic Investor (launching). Network total: 36K+ views, 163+ subs.
+- **Live channel portfolio** added to Digital Growth page — 5 real channels with stats
 - **Privacy Policy + Legal Notice pages** — built, all footer `#` links fixed across all 6 pages
 - **Wired OG/Twitter meta tags** into all pages
 - **LinkedIn content system** — full calendar June–Sept, weekly batch reminder (Sundays 8pm CST)
 - **Week 1 LinkedIn posts** — 4 posts written, refined, approved (`LINKEDIN-POSTS.md`)
 - **Week 1 LinkedIn images** — 4 branded graphics (`assets/images/linkedin/`)
+
+---
+
+## Completed — July 21, 2026 Session
+
+- **Week of July 21 LinkedIn posts drafted** — AI governance in community banking (Fintech, Tue), From zero to 1,000 subscribers (Digital Growth, Tue), The modernization assessment: what it covers (Fintech, Thu), Authority tier: who it's for (Digital Growth, Thu). Added to `LINKEDIN-POSTS.md` and individual `.txt` files.
+- **Week of July 21 LinkedIn images generated** — 4 branded graphics matching the site's design system (navy/gold, Playfair Display + Source Sans Pro), saved to `assets/images/linkedin/` as `post-{tue|thu}-jul{21|23}-{fintech|digital-growth}.png`.
+- **Authority tier post revised** — cut the "happy to talk through it" soft CTA line; closes on "Authority is where that conversation starts" instead.
+- **Stoic Reflections stats refreshed** — 113 → 129 subscribers, 33K+ → 35.6K+ views. Updated on the live Digital Growth channel portfolio (`digital-growth.html`), the Jul 21 LinkedIn post copy, and the Jul 21 post image. Network totals (36K+ views / 163+ subs across all 5 channels) were NOT recalculated — no updated data yet for the other 4 channels.
+- **Current channel portfolio** (Digital Growth page, as of this session): Stoic Reflections (129 subs, 35.6K+ views), The Machine Whisperer (27 subs, 1.1K), Advanedge Consulting AI (15 subs, 1.6K), Biblical Wisdom Unearthed (6 subs, 738), Stoic Investor (launching).
+- All changes committed and pushed to `main` (commits `27f2c03`, `205276a`, `8fcfd65`).
 
 ---
 
@@ -122,7 +130,7 @@ On the two blog-share posts, drop the article URL in the first comment after pos
 ## Active Reminders
 
 - **Sundays 8pm CST** — weekly LinkedIn batch (recurring; note: cron jobs are session-only and expire after 7 days — re-create if needed)
-- **June 28 9am** — write July blog posts
+- ~~June 28 9am — write July blog posts~~ — done: both July posts live (`blog/ai-in-lending-community-banks-2026.html`, `blog/how-faceless-youtube-channels-make-money.html`)
 
 ---
 
