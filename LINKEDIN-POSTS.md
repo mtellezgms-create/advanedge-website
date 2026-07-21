@@ -291,6 +291,83 @@ Here's how the six-month build actually goes: advanedgeconsulting.com/digital-gr
 
 ---
 
+## WEEK OF JULY 21 — July 21 & 23, 2026
+
+> Schedule: Tue July 21 (Fintech 7:30am, Digital Growth 5pm) · Thu July 23 (Fintech 7:30am, Digital Growth 5pm)
+> FORMAT: Publish everything down to "FIRST COMMENT" as the post — NO link in the body. Then paste the FIRST COMMENT line as your first comment right after publishing.
+
+### Tuesday July 21 — FINTECH
+
+"AI governance" sounds like a compliance checkbox. For community banks and credit unions, it's becoming table stakes.
+
+Loan origination systems now flag underwriting anomalies. Fraud models score transactions in real time. Copilots draft covenant summaries. All useful — all also decisions your institution now needs to be able to explain to an examiner.
+
+The institutions handling this well aren't slowing AI adoption down. They're doing three things before they scale it: documenting where a human still signs off (especially on adverse action), tracking model performance over time instead of trusting a vendor's initial validation, and keeping one person accountable for the whole inventory of AI tools in use — not just the flashy ones.
+
+Abrigo's tools give you the capability. Governance is what lets you use it with confidence in an exam.
+
+If your institution is rolling out AI features and governance hasn't caught up yet, that gap is worth closing before it shows up in an exam finding instead of a planning meeting.
+
+#Abrigo #CommunityBanking #CreditUnions #AIGovernance
+
+**FIRST COMMENT** (paste right after publishing):
+More on how we help institutions build this: advanedgeconsulting.com/services/lending-modernization-assessment.html
+
+---
+
+### Tuesday July 21 — DIGITAL GROWTH
+
+Everyone asks the same question about a new channel: how long until it's actually earning?
+
+The real gate is the YouTube Partner Program — 1,000 subscribers and 4,000 watch hours. Below that, a channel earns nothing, no matter how good the content is.
+
+Realistic timeline for a well-run faceless channel, publishing weekly without gaps: 6–9 months to clear that threshold. Niches with a large existing audience move faster; narrower niches take longer but often monetize higher once they're in.
+
+Stoic Reflections, one of the channels in our network, is at 113 subscribers and 33K+ views right now — on pace, not overnight. That's what the honest version of this looks like: steady growth from consistent publishing, not a viral spike.
+
+Anyone telling you 1,000 subscribers in a month is either lucky or not telling you the full story.
+
+#YouTubeAutomation #FacelessYouTube #PassiveIncome #DigitalGrowth
+
+**FIRST COMMENT** (paste right after publishing):
+Here's how we build and run channels end to end: advanedgeconsulting.com/digital-growth.html
+
+---
+
+### Thursday July 23 — FINTECH
+
+"Modernization assessment" can mean almost anything depending on who's running it. Here's what ours actually covers.
+
+We start with workflow mapping — not what the org chart says happens, but what staff actually do day to day, including the workarounds nobody put in a manual. Then a utilization review of your existing Abrigo/Sageworks stack — most institutions are using a fraction of what they're already paying for. Then an integration check across core, LOS, and any point solutions bolted on over the years.
+
+The output isn't a slide deck of generic recommendations. It's a prioritized roadmap — what to fix first, what to defer, and a realistic cost/effort estimate for each.
+
+Most institutions that go through it are surprised the biggest opportunity wasn't a new tool. It was configuring what they already own.
+
+#Abrigo #CommunityBanking #CreditUnions #LendingModernization
+
+**FIRST COMMENT** (paste right after publishing):
+Details on the assessment: advanedgeconsulting.com/services/lending-modernization-assessment.html
+
+---
+
+### Thursday July 23 — DIGITAL GROWTH
+
+Not every client needs the same build.
+
+Our Authority tier ($6,997/month) is for entrepreneurs who already have some brand or audience elsewhere — a business, a following, credibility in a niche — and want a channel that reflects that scale from day one. Faster publishing cadence, deeper production quality, and hands-on strategy calls, not just a pipeline running in the background.
+
+It's not the starting point for most people, and it doesn't need to be. Launch and Scale exist for a reason. But if you're past the "let's see if this works" stage and want a channel built like a real media asset, Authority is built for that conversation.
+
+Happy to talk through which tier actually fits where you are.
+
+#YouTubeAutomation #FacelessYouTube #DigitalGrowth #PassiveIncome
+
+**FIRST COMMENT** (paste right after publishing):
+Full tier breakdown here: advanedgeconsulting.com/digital-growth.html
+
+---
+
 ## CONTENT CALENDAR — June through September 2026
 
 | Date | Day | Line | Topic |
