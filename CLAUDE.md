@@ -64,6 +64,8 @@ Personal consulting business website for **Marvin Tellez**, founder of Advanedge
 ├── services/
 │   ├── abrigo-sageworks.html                        Specialist credential page
 │   └── lending-modernization-assessment.html        Primary conversion offer
+├── clients/                                          Private per-client deliverables (all noindex)
+│   └── _TEMPLATE-roadmap.html                        Master template — see LAUNCH-CHECKLIST.md
 ├── blog/
 │   ├── loan-origination-system-implementation.html
 │   └── youtube-automation-why-you-need-a-vendor.html

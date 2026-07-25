@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modernization Roadmap | [Institution Name] | Advanedge Consulting</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="../assets/images/logo-advanedge.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0A1628;
+      --gold: #C9A84C;
+      --white: #FFFFFF;
+      --ink: #1a2438;
+      --paper: #FAF8F4;
+      --muted: #6b7280;
+      --line: rgba(10, 22, 40, 0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Source Sans Pro', sans-serif; background: var(--paper); color: var(--ink); }
+
+    /* LOCK SCREEN */
+    #lock-screen { position: fixed; inset: 0; background: var(--navy); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+    .lock-box { background: #0d1c34; border: 1px solid rgba(201,168,76,0.3); border-radius: 12px; padding: 48px 40px; width: 100%; max-width: 420px; text-align: center; }
+    .lock-logo { width: 56px; height: 56px; margin: 0 auto 20px; display: block; }
+    .lock-brand { font-size: 13px; font-weight: 600; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 12px; }
+    .lock-title { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .lock-sub { font-size: 15px; color: rgba(255,255,255,0.55); margin-bottom: 32px; line-height: 1.5; }
+    .lock-input { width: 100%; padding: 14px 18px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.06); color: var(--white); font-size: 16px; outline: none; margin-bottom: 14px; text-align: center; letter-spacing: 0.06em; }
+    .lock-input:focus { border-color: var(--gold); }
+    .lock-input::placeholder { color: rgba(255,255,255,0.3); letter-spacing: 0; }
+    .lock-btn { width: 100%; padding: 14px; border-radius: 6px; border: none; background: var(--gold); color: var(--navy); font-size: 15px; font-weight: 700; cursor: pointer; transition: background 0.2s; text-transform: uppercase; letter-spacing: 0.05em; }
+    .lock-btn:hover { background: #d9bb63; }
+    .lock-error { color: #f87171; font-size: 13px; margin-top: 10px; min-height: 18px; }
+    .lock-note { font-size: 12px; color: rgba(255,255,255,0.3); margin-top: 20px; }
+
+    #main-content { display: none; }
+
+    /* NAV */
+    .nav { background: var(--navy); padding: 0 40px; height: 64px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-brand img { width: 32px; height: 32px; }
+    .nav-brand span { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 600; color: var(--white); }
+    .nav-badge { background: var(--gold); color: var(--navy); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.06em; text-transform: uppercase; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, var(--navy) 0%, #0d1c34 100%); padding: 56px 40px 44px; text-align: center; border-bottom: 1px solid rgba(201,168,76,0.2); }
+    .hero-eyebrow { font-size: 12px; font-weight: 600; color: var(--gold); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 600; color: var(--white); margin-bottom: 10px; line-height: 1.2; }
+    .hero p { font-size: 16px; color: rgba(255,255,255,0.6); max-width: 600px; margin: 0 auto 24px; line-height: 1.6; }
+    .hero-meta { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+    .hero-meta div { display: flex; flex-direction: column; }
+    .hero-meta span:first-child { font-size: 10px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 4px; }
+    .hero-meta span:last-child { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; color: var(--white); }
+
+    /* LAYOUT */
+    .body-wrap { max-width: 960px; margin: 0 auto; padding: 44px 24px 80px; }
+    .section { background: var(--white); border-radius: 10px; border: 1px solid var(--line); margin-bottom: 24px; overflow: hidden; }
+    .section-header { display: flex; align-items: center; gap: 14px; padding: 20px 26px; border-bottom: 1px solid var(--line); cursor: pointer; user-select: none; }
+    .section-header:hover { background: var(--paper); }
+    .section-icon { width: 38px; height: 38px; border-radius: 8px; background: var(--paper); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: 'Playfair Display', serif; font-weight: 700; color: var(--gold); font-size: 15px; }
+    .section-title-wrap { flex: 1; }
+    .section-num { font-size: 10.5px; font-weight: 700; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2px; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: 16.5px; font-weight: 700; color: var(--navy); }
+    .chevron { width: 18px; height: 18px; stroke: var(--muted); transition: transform 0.2s; flex-shrink: 0; }
+    .section.open .chevron { transform: rotate(180deg); }
+    .section-body { padding: 26px; display: none; }
+    .section.open .section-body { display: block; }
+
+    .fill { color: #92650A; background: #FFF8E8; padding: 1px 6px; border-radius: 4px; font-style: italic; }
+    .callout { background: var(--paper); border-left: 3px solid var(--gold); padding: 14px 18px; border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.6; margin-bottom: 16px; }
+    .callout strong { color: var(--navy); }
+
+    /* ROADMAP PHASES + CHECKLIST */
+    .phase { margin-bottom: 22px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+    .phase:last-child { border-bottom: none; margin-bottom: 0; }
+    .phase-hdr { display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+    .phase-hdr .num { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--gold); }
+    .phase-hdr h3 { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--navy); }
+    .phase-hdr .window { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    .init-list { list-style: none; margin-left: 32px; }
+    .init-list li { display: flex; align-items: flex-start; gap: 10px; padding: 6px 0; font-size: 13.5px; }
+    .init-list input[type=checkbox] { margin-top: 3px; width: 15px; height: 15px; accent-color: var(--gold); cursor: pointer; flex-shrink: 0; }
+    .init-list li.checked label { text-decoration: line-through; color: var(--muted); }
+    .init-meta { font-size: 11.5px; color: var(--muted); margin-left: 32px; margin-top: 4px; }
+
+    /* CONTACT / NEXT STEP */
+    .next-step { background: var(--navy); border-radius: 10px; padding: 32px; color: var(--white); text-align: center; }
+    .next-step h2 { font-family: 'Playfair Display', serif; font-size: 22px; margin-bottom: 10px; }
+    .next-step p { color: rgba(255,255,255,0.7); font-size: 14.5px; max-width: 480px; margin: 0 auto 20px; line-height: 1.6; }
+    .btn-gold { display: inline-block; background: var(--gold); color: var(--navy); padding: 12px 26px; font-weight: 700; text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase; font-size: 13px; border-radius: 4px; }
+    .next-fine { margin-top: 16px; font-size: 12.5px; color: rgba(255,255,255,0.5); }
+
+    .footer { background: var(--navy); text-align: center; padding: 24px; }
+    .footer p { font-size: 12px; color: rgba(255,255,255,0.3); }
+    .footer a { color: var(--gold); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 26px; }
+      .nav { padding: 0 20px; }
+      .body-wrap { padding: 28px 16px 60px; }
+      .section-header { padding: 16px 18px; }
+      .section-body { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ LOCK SCREEN ══ -->
+<div id="lock-screen">
+  <div class="lock-box">
+    <img src="../assets/images/logo-advanedge.png" alt="Advanedge" class="lock-logo" />
+    <p class="lock-brand">Advanedge Consulting</p>
+    <h1 class="lock-title">Modernization Roadmap</h1>
+    <p class="lock-sub">Enter your access password to view [Institution Name]'s progress tracker.</p>
+    <input type="password" id="password-input" class="lock-input" placeholder="Enter password" autocomplete="off" />
+    <button class="lock-btn" onclick="checkPassword()">Unlock</button>
+    <p class="lock-error" id="lock-error"></p>
+    <p class="lock-note">Password was shared directly by Marvin. Contact info@advanedgeconsulting.com if you've misplaced it.</p>
+  </div>
+</div>
+
+<!-- ══ MAIN CONTENT ══ -->
+<div id="main-content">
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-brand">
+      <img src="../assets/images/logo-advanedge.png" alt="Advanedge" />
+      <span>Advanedge Consulting</span>
+    </a>
+    <span class="nav-badge">Progress Tracker</span>
+  </nav>
+
+  <div class="hero">
+    <p class="hero-eyebrow">Lending Modernization Assessment &middot; Companion Page</p>
+    <h1><span class="fill" style="background:none; color:#C9A84C;">[Institution Name]</span> Roadmap Progress</h1>
+    <p>The full findings, recommendations, and figures are in the PDF report sent to you directly. This page is just a living checklist to track initiative progress against the 12&ndash;24 month plan as you complete it.</p>
+    <div class="hero-meta">
+      <div><span>Prepared By</span><span>Marvin Tellez</span></div>
+      <div><span>Delivered</span><span class="fill" style="background:none; color:#fff;">[Date]</span></div>
+      <div><span>Walkthrough</span><span class="fill" style="background:none; color:#fff;">[Scheduled date]</span></div>
+    </div>
+  </div>
+
+  <div class="body-wrap">
+
+    <!-- ROADMAP (interactive checklist) -->
+    <div class="section open" id="section-roadmap">
+      <div class="section-header" onclick="toggleSection('section-roadmap')">
+        <div class="section-icon">01</div>
+        <div class="section-title-wrap"><div class="section-num">The Roadmap</div><div class="section-title">12&ndash;24 Month Sequenced Plan</div></div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="section-body">
+        <div class="callout"><strong>How to use:</strong> Check off each initiative as it's completed. Progress is saved in your browser for this session. Keep initiative names high-level here &mdash; save specific figures and findings for the PDF report.</div>
+
+        <div class="phase">
+          <div class="phase-hdr"><span class="num">01</span><h3>Foundation</h3><span class="window fill">[Months 1&ndash;3]</span></div>
+          <ul class="init-list" id="phase1">
+            <li id="p1i1"><input type="checkbox" onchange="saveCheck('p1i1',this)"><label onclick="toggleCheck('p1i1')" class="fill">[Initiative &mdash; e.g. AI governance policy drafted and board-reviewed]</label></li>
+            <li id="p1i2"><input type="checkbox" onchange="saveCheck('p1i2',this)"><label onclick="toggleCheck('p1i2')" class="fill">[Initiative &mdash; e.g. Workflow rules audit and rationalization]</label></li>
+          </ul>
+          <div class="init-meta">Owner: <span class="fill">[Role]</span></div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-hdr"><span class="num">02</span><h3>Integration</h3><span class="window fill">[Months 4&ndash;9]</span></div>
+          <ul class="init-list" id="phase2">
+            <li id="p2i1"><input type="checkbox" onchange="saveCheck('p2i1',this)"><label onclick="toggleCheck('p2i1')" class="fill">[Initiative &mdash; e.g. Core/LOS API integration layer]</label></li>
+            <li id="p2i2"><input type="checkbox" onchange="saveCheck('p2i2',this)"><label onclick="toggleCheck('p2i2')" class="fill">[Initiative &mdash; e.g. Document pipeline unification]</label></li>
+          </ul>
+          <div class="init-meta">Owner: <span class="fill">[Role]</span></div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-hdr"><span class="num">03</span><h3>Enablement</h3><span class="window fill">[Months 10&ndash;18]</span></div>
+          <ul class="init-list" id="phase3">
+            <li id="p3i1"><input type="checkbox" onchange="saveCheck('p3i1',this)"><label onclick="toggleCheck('p3i1')" class="fill">[Initiative &mdash; e.g. AI use cases deployed]</label></li>
+            <li id="p3i2"><input type="checkbox" onchange="saveCheck('p3i2',this)"><label onclick="toggleCheck('p3i2')" class="fill">[Initiative &mdash; e.g. Decisioning model trust rebuilt via audit trail]</label></li>
+          </ul>
+          <div class="init-meta">Owner: <span class="fill">[Role]</span></div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-hdr"><span class="num">04</span><h3>Visibility &amp; Scale</h3><span class="window fill">[Months 19&ndash;24]</span></div>
+          <ul class="init-list" id="phase4">
+            <li id="p4i1"><input type="checkbox" onchange="saveCheck('p4i1',this)"><label onclick="toggleCheck('p4i1')" class="fill">[Initiative &mdash; e.g. Real-time executive dashboard live]</label></li>
+            <li id="p4i2"><input type="checkbox" onchange="saveCheck('p4i2',this)"><label onclick="toggleCheck('p4i2')" class="fill">[Initiative &mdash; e.g. Governance model extended to next system]</label></li>
+          </ul>
+          <div class="init-meta">Owner: <span class="fill">[Role]</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEXT STEP -->
+    <div class="next-step">
+      <h2>The 90-Minute Executive Walkthrough</h2>
+      <p>The full roadmap &mdash; findings, recommendations, and investment figures &mdash; is in the PDF sent to you directly. Questions before the walkthrough, reach out directly.</p>
+      <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener" class="btn-gold">Reach Out to Marvin</a>
+      <div class="next-fine">info@advanedgeconsulting.com</div>
+    </div>
+
+  </div><!-- /body-wrap -->
+
+  <footer class="footer">
+    <p>&copy; 2026 <a href="https://advanedgeconsulting.com">Advanedge Consulting</a> &middot; Prepared exclusively for [Institution Name] &middot; Do not share your access password</p>
+  </footer>
+
+</div><!-- /main-content -->
+
+<script>
+  const PASS = '[SET-CLIENT-PASSWORD]';
+
+  function checkPassword() {
+    const val = document.getElementById('password-input').value.trim();
+    if (val === PASS) {
+      document.getElementById('lock-screen').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+      loadChecks();
+    } else {
+      document.getElementById('lock-error').textContent = 'Incorrect password.';
+      document.getElementById('password-input').focus();
+    }
+  }
+  document.getElementById('password-input').addEventListener('keydown', e => { if (e.key === 'Enter') checkPassword(); });
+
+  function toggleSection(id) { document.getElementById(id).classList.toggle('open'); }
+
+  // Checklist persistence (sessionStorage — no localStorage per policy)
+  function saveCheck(id, cb) {
+    const li = document.getElementById(id);
+    if (cb.checked) li.classList.add('checked'); else li.classList.remove('checked');
+    try {
+      const state = JSON.parse(sessionStorage.getItem('roadmap_checks') || '{}');
+      state[id] = cb.checked;
+      sessionStorage.setItem('roadmap_checks', JSON.stringify(state));
+    } catch(e) {}
+  }
+  function toggleCheck(id) {
+    const li = document.getElementById(id);
+    const cb = li.querySelector('input[type="checkbox"]');
+    cb.checked = !cb.checked;
+    saveCheck(id, cb);
+  }
+  function loadChecks() {
+    try {
+      const state = JSON.parse(sessionStorage.getItem('roadmap_checks') || '{}');
+      for (const [id, checked] of Object.entries(state)) {
+        const li = document.getElementById(id);
+        if (!li) continue;
+        const cb = li.querySelector('input[type="checkbox"]');
+        if (cb) { cb.checked = checked; if (checked) li.classList.add('checked'); }
+      }
+    } catch(e) {}
+  }
+</script>
+
+</body>
+</html>

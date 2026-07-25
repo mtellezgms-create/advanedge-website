@@ -136,6 +136,46 @@
 
 ---
 
+## 📋 Modernization Roadmap Delivery (Assessment Clients)
+
+**Asset:** The final deliverable of the Lending Modernization Assessment (4–8 weeks) — a board-ready roadmap, per `services/lending-modernization-assessment.html`.
+
+### ⚠️ Security note (read before using)
+GitHub Pages sites are publicly reachable even from a private repo — only GitHub Enterprise Cloud supports a truly private Pages site. A client-side password screen (like `playbook-resources.html`'s) does **not** protect anything from someone who views page source or finds the URL; it's a courtesy gate, not real security. Confirmed via GitHub's own docs, July 2026. Because of this, the two deliverables are **not** mirrors of each other — real findings live only in the PDF, delivered through a channel with actual access control.
+
+### Format
+Two pieces per client, different content, different delivery channel:
+1. **PDF report** — the confidential deliverable. Findings, gap register, LOS recommendations, integration architecture, AI readiness scores, investment figures. Matches the Executive Brief design system (navy/gold, Lora/Lato). Deliver via a **OneDrive password-protected link** (Share → Anyone with the link → Settings → Set Password — Microsoft 365 feature) or as a direct email attachment. Never post this content on the public website.
+2. **Private web page** — a lightweight, non-sensitive companion at `clients/[client-slug]-roadmap.html`, `noindex`, password-gated for courtesy/privacy (not real security). Contains only the 12–24 month roadmap phase checklist so the client can check off initiatives over time — no findings, no dollar figures, no scores. Modeled on `playbook-resources.html`'s lock-screen pattern, reskinned in the site's navy/gold Fintech Advisory palette.
+
+### Master Templates
+- PDF: build from the structure in `advanedge-modernization-roadmap-TEMPLATE.pdf` (in the Advanedge project folder, not the repo — regenerate per client, don't reuse the PDF file itself)
+- Web page: `clients/_TEMPLATE-roadmap.html` — **never link this from nav or edit it directly for a real client.** Copy it to a new file first.
+
+### PDF Sections (confidential — PDF only)
+1. Executive Summary
+2. Workflow Gap & Opportunity Register
+3. LOS Optimization Recommendations
+4. Integration Architecture — current vs. target state
+5. AI Readiness Scorecard results (scored live during discovery, not the generic Playbook scorecard)
+6. The Roadmap — 12–24 month sequenced plan across 4 phases (Foundation / Integration / Enablement / Visibility & Scale)
+7. Investment & Effort Estimates
+8. Next Step — 90-minute executive walkthrough scheduling
+
+### Web Page Sections (non-sensitive — safe to publish)
+1. The Roadmap checklist only — phase names, high-level initiative names, owner role. No figures, no findings, no scores.
+
+### How to Instantiate for a New Client
+- [ ] Build the PDF from the roadmap content, filling in every `[bracketed]` placeholder with real Assessment findings
+- [ ] Share the PDF via a OneDrive password-protected link (or direct attachment) — set a unique password per client, share it by phone or a separate channel from the link itself, not in the same email
+- [ ] Copy `clients/_TEMPLATE-roadmap.html` → `clients/[client-slug]-roadmap.html`
+- [ ] Fill in only the phase/initiative names (keep them generic — no numbers, no specific findings)
+- [ ] Set a unique page password in the `PASS` constant (different from the OneDrive password)
+- [ ] Update the `<title>` and lock-screen copy with the real institution name
+- [ ] Log the client, delivery date, and where each password lives somewhere durable (e.g., the outreach tracker) so nothing gets lost
+
+---
+
 ## 📌 Where to Post on Launch
 | Platform | Content |
 |----------|---------|
