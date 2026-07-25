@@ -146,5 +146,5 @@ Domain:    advanedgeconsulting.com
 ## Recent Changes (May 2026)
 
 - Created `services/abrigo-sageworks.html` — Abrigo/Sageworks specialist landing page with operator-level credentials
-- Created `services/lending-modernization-assessment.html` — productized 2–3 week assessment offer with week-by-week timeline and tangible deliverables
+- Created `services/lending-modernization-assessment.html` — productized 4–8 week assessment offer with week-by-week timeline and tangible deliverables
 - Updated footer Services column on service pages to feature the two new pages

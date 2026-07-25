@@ -1,0 +1,18 @@
+FINTECH ADVISORY — LinkedIn post for Thursday, July 23, 7:30am CST
+Topic: The modernization assessment — what it covers
+
+---
+
+"Modernization assessment" can mean almost anything depending on who's running it. Here's what ours actually covers.
+
+We start with workflow mapping — not what the org chart says happens, but what staff actually do day to day, including the workarounds nobody put in a manual. Then a utilization review of your existing Abrigo/Sageworks stack — most institutions are using a fraction of what they're already paying for. Then an integration check across core, LOS, and any point solutions bolted on over the years.
+
+The output isn't a slide deck of generic recommendations. It's a prioritized roadmap — what to fix first, what to defer, and a realistic cost/effort estimate for each.
+
+Most institutions that go through it are surprised the biggest opportunity wasn't a new tool. It was configuring what they already own.
+
+#Abrigo #CommunityBanking #CreditUnions #LendingModernization
+
+---
+FIRST COMMENT (paste right after publishing):
+Details on the assessment: advanedgeconsulting.com/services/lending-modernization-assessment.html

@@ -1,0 +1,20 @@
+FINTECH ADVISORY — LinkedIn post for Tuesday, July 21, 7:30am CST
+Topic: AI governance in community banking
+
+---
+
+"AI governance" sounds like a compliance checkbox. For community banks and credit unions, it's becoming table stakes.
+
+Loan origination systems now flag underwriting anomalies. Fraud models score transactions in real time. Copilots draft covenant summaries. All useful — all also decisions your institution now needs to be able to explain to an examiner.
+
+The institutions handling this well aren't slowing AI adoption down. They're doing three things before they scale it: documenting where a human still signs off (especially on adverse action), tracking model performance over time instead of trusting a vendor's initial validation, and keeping one person accountable for the whole inventory of AI tools in use — not just the flashy ones.
+
+Abrigo's tools give you the capability. Governance is what lets you use it with confidence in an exam.
+
+If your institution is rolling out AI features and governance hasn't caught up yet, that gap is worth closing before it shows up in an exam finding instead of a planning meeting.
+
+#Abrigo #CommunityBanking #CreditUnions #AIGovernance
+
+---
+FIRST COMMENT (paste right after publishing):
+More on how we help institutions build this: advanedgeconsulting.com/services/lending-modernization-assessment.html

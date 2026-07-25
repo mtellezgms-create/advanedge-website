@@ -291,6 +291,105 @@ Here's how the six-month build actually goes: advanedgeconsulting.com/digital-gr
 
 ---
 
+## WEEK OF JULY 21 — July 21 & 23, 2026
+
+> Schedule: Tue July 21 (Fintech 7:30am, Digital Growth 5pm) · Thu July 23 (Fintech 7:30am, Digital Growth 5pm)
+> FORMAT: Publish everything down to "FIRST COMMENT" as the post — NO link in the body. Then paste the FIRST COMMENT line as your first comment right after publishing.
+
+### Tuesday July 21 — FINTECH
+
+"AI governance" sounds like a compliance checkbox. For community banks and credit unions, it's becoming table stakes.
+
+Loan origination systems now flag underwriting anomalies. Fraud models score transactions in real time. Copilots draft covenant summaries. All useful — all also decisions your institution now needs to be able to explain to an examiner.
+
+The institutions handling this well aren't slowing AI adoption down. They're doing three things before they scale it: documenting where a human still signs off (especially on adverse action), tracking model performance over time instead of trusting a vendor's initial validation, and keeping one person accountable for the whole inventory of AI tools in use — not just the flashy ones.
+
+Abrigo's tools give you the capability. Governance is what lets you use it with confidence in an exam.
+
+If your institution is rolling out AI features and governance hasn't caught up yet, that gap is worth closing before it shows up in an exam finding instead of a planning meeting.
+
+#Abrigo #CommunityBanking #CreditUnions #AIGovernance
+
+**FIRST COMMENT** (paste right after publishing):
+More on how we help institutions build this: advanedgeconsulting.com/services/lending-modernization-assessment.html
+
+---
+
+### Tuesday July 21 — DIGITAL GROWTH
+
+Everyone asks the same question about a new channel: how long until it's actually earning?
+
+The real gate is the YouTube Partner Program — 1,000 subscribers and 4,000 watch hours. Below that, a channel earns nothing, no matter how good the content is.
+
+Realistic timeline for a well-run faceless channel, publishing weekly without gaps: 6–9 months to clear that threshold. Niches with a large existing audience move faster; narrower niches take longer but often monetize higher once they're in.
+
+Stoic Reflections, one of the channels in our network, is at 129 subscribers and 35.6K+ views right now — on pace, not overnight. That's what the honest version of this looks like: steady growth from consistent publishing, not a viral spike.
+
+Anyone telling you 1,000 subscribers in a month is either lucky or not telling you the full story.
+
+#YouTubeAutomation #FacelessYouTube #PassiveIncome #DigitalGrowth
+
+**FIRST COMMENT** (paste right after publishing):
+Here's how we build and run channels end to end: advanedgeconsulting.com/digital-growth.html
+
+---
+
+### Thursday July 23 — FINTECH
+
+"Modernization assessment" can mean almost anything depending on who's running it. Here's what ours actually covers.
+
+We start with workflow mapping — not what the org chart says happens, but what staff actually do day to day, including the workarounds nobody put in a manual. Then a utilization review of your existing Abrigo/Sageworks stack — most institutions are using a fraction of what they're already paying for. Then an integration check across core, LOS, and any point solutions bolted on over the years.
+
+The output isn't a slide deck of generic recommendations. It's a prioritized roadmap — what to fix first, what to defer, and a realistic cost/effort estimate for each.
+
+Most institutions that go through it are surprised the biggest opportunity wasn't a new tool. It was configuring what they already own.
+
+#Abrigo #CommunityBanking #CreditUnions #LendingModernization
+
+**FIRST COMMENT** (paste right after publishing):
+Details on the assessment: advanedgeconsulting.com/services/lending-modernization-assessment.html
+
+---
+
+### Thursday July 23 — DIGITAL GROWTH
+
+Not every client needs the same build.
+
+Our Authority tier ($6,997/month) is for entrepreneurs who already have some brand or audience elsewhere — a business, a following, credibility in a niche — and want a channel that reflects that scale from day one. Faster publishing cadence, deeper production quality, and hands-on strategy calls, not just a pipeline running in the background.
+
+It's not the starting point for most people, and it doesn't need to be. Launch and Scale exist for a reason. But if you're past the "let's see if this works" stage and want a channel built like a real media asset, Authority is where that conversation starts.
+
+#YouTubeAutomation #FacelessYouTube #DigitalGrowth #PassiveIncome
+
+**FIRST COMMENT** (paste right after publishing):
+Full tier breakdown here: advanedgeconsulting.com/digital-growth.html
+
+---
+
+## WEEK OF JULY 28 — July 28, 2026
+
+> Schedule: Tue July 28 (Fintech 7:30am CST)
+> FORMAT: Native LinkedIn Document post — upload `advanedge-linkedin-carousel-lending-modernization.pdf` directly as the post attachment (LinkedIn renders each of its 8 pages as a swipeable slide). This is NOT a link post — no first comment link, no gate. The carousel delivers real content to everyone in-feed; the closing slide still invites a comment/DM for the full Executive Brief + Scorecard, which get sent using the templates in `Warm-Send Outreach Templates.md`. Log any "playbook" comments/DMs in the outreach tracker.
+> Only the Tuesday Fintech slot is drafted here — Thursday Fintech and both Digital Growth posts for this week follow the normal calendar and aren't included in this entry.
+
+### Tuesday July 28 — FINTECH (Document Post — attach the carousel PDF)
+
+Finally — something for everyone in my network running Abrigo/Sageworks.
+
+After 26 years in fintech, and the last 10+ living inside Abrigo/Sageworks environments, the same six patterns show up almost everywhere I look — regardless of asset size or how long the platform's been live.
+
+I put together the 2026 Lending Modernization Playbook to walk through what we're seeing right now: where the time actually goes, what the highest-performing institutions do differently, and the 5-Pillar Framework we use to sequence every engagement.
+
+Swipe through for the overview.
+
+Want the full Executive Brief and the 20-question Readiness Scorecard? Comment "playbook" or send me a DM and I'll get it your way.
+
+#Abrigo #CommunityBanking #CreditUnions #LendingModernization
+
+**NO FIRST COMMENT LINK.** This is a document upload, not a link post — attach the PDF directly when publishing. CTA lives in the post body and the carousel's last slide (comment "playbook" or DM).
+
+---
+
 ## CONTENT CALENDAR — June through September 2026
 
 | Date | Day | Line | Topic |
