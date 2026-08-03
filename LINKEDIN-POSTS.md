@@ -366,11 +366,10 @@ Full tier breakdown here: advanedgeconsulting.com/digital-growth.html
 
 ---
 
-## WEEK OF JULY 28 — July 28, 2026
+## WEEK OF JULY 28 — July 28 & 30, 2026
 
-> Schedule: Tue July 28 (Fintech 7:30am CST)
-> FORMAT: Native LinkedIn Document post — upload `advanedge-linkedin-carousel-lending-modernization.pdf` directly as the post attachment (LinkedIn renders each of its 8 pages as a swipeable slide). This is NOT a link post — no first comment link, no gate. The carousel delivers real content to everyone in-feed; the closing slide still invites a comment/DM for the full Executive Brief + Scorecard, which get sent using the templates in `Warm-Send Outreach Templates.md`. Log any "playbook" comments/DMs in the outreach tracker.
-> Only the Tuesday Fintech slot is drafted here — Thursday Fintech and both Digital Growth posts for this week follow the normal calendar and aren't included in this entry.
+> Schedule: Tue July 28 (Fintech 7:30am CST, Digital Growth 5pm CST) · Thu July 30 (Fintech 7:30am CST, Digital Growth 5pm CST)
+> Note: The content calendar originally had "August blog preview" penciled in for both Jul 28 lines. The Fintech slot was replaced with the Playbook carousel below. No Digital Growth blog exists for August yet, so that Tuesday slot uses a standalone topic instead — update this note if/when an August Digital Growth post gets written.
 
 ### Tuesday July 28 — FINTECH (Document Post — attach the carousel PDF)
 
@@ -387,6 +386,136 @@ Want the full Executive Brief and the 20-question Readiness Scorecard? Comment "
 #Abrigo #CommunityBanking #CreditUnions #LendingModernization
 
 **NO FIRST COMMENT LINK.** This is a document upload, not a link post — attach the PDF directly when publishing. CTA lives in the post body and the carousel's last slide (comment "playbook" or DM).
+
+---
+
+### Tuesday July 28 — DIGITAL GROWTH
+
+People ask what "done-for-you" actually means, day to day. Here's a real month on one channel.
+
+Topic research runs continuously in the background, not as a weekly scramble. Scripts get generated, reviewed, and queued a few days ahead of publish — never written the morning of. Every thumbnail gets an A/B pass before it goes live, and we're watching retention curves daily, not just subscriber count, because retention is what actually tells you whether an episode worked.
+
+None of it is glamorous. It's a pipeline running on schedule, with a human checking the parts that matter before anything ships. That consistency is the entire product — not any single video.
+
+#YouTubeAutomation #FacelessYouTube #DigitalGrowth #PassiveIncome
+
+**FIRST COMMENT** (paste right after publishing):
+See how we build and run channels end to end: advanedgeconsulting.com/digital-growth.html
+
+---
+
+### Thursday July 30 — FINTECH (Blog Drop)
+
+Jack Henry and Abrigo are both good platforms. The problems I see almost never come from either one individually — they show up in the seam between them.
+
+Ten-plus years running both side by side taught me that seam breaks in the same three places, almost every time: borrower/account ID matching, GL posting timing, and the handoff between decision, document, and booked loan. Most institutions solve two of the three cleanly and quietly live with the third for years — until an audit or a merger needs every number to match.
+
+Wrote up what good actually looks like, plus a short checklist to run before you integrate or re-integrate. Worth 6 minutes if Jack Henry and Abrigo are both part of your stack.
+
+Article in comments ↓
+
+#Abrigo #CommunityBanking #JackHenry #CoreIntegration
+
+**FIRST COMMENT** (paste right after publishing):
+Full breakdown here: advanedgeconsulting.com/blog/jack-henry-abrigo-integration.html
+
+---
+
+### Thursday July 30 — DIGITAL GROWTH
+
+Subscriber count is the vanity metric. Retention is the one that actually predicts whether a channel makes it.
+
+A video can pull in views and still fail — if viewers bail in the first 15 seconds, the algorithm notices before your subscriber count ever will. The channels in our network that grew fastest weren't the ones chasing the biggest opening hook. They were the ones where the whole script held attention start to finish, so the platform kept recommending it.
+
+If you're evaluating a channel — yours or a vendor's — ask for the retention curve before you ask for the subscriber count. It's the number that tells you whether the content is actually working.
+
+#YouTubeAutomation #FacelessYouTube #PassiveIncome #DigitalGrowth
+
+**FIRST COMMENT** (paste right after publishing):
+Here's how we build and run channels end to end: advanedgeconsulting.com/digital-growth.html
+
+---
+
+## WEEK OF AUGUST 4 — August 4 & 6, 2026
+
+> Schedule: Tue Aug 4 (Fintech 7:30am CST, Digital Growth 5pm CST) · Thu Aug 6 (Fintech 7:30am CST, Digital Growth 5pm CST)
+> Note: The Thu Jul 30 Fintech post promised a Jack Henry/Abrigo integration article "in comments," but the article was never published to the site — the link was live but broken. Resolved by publishing blog/jack-henry-abrigo-integration.html on Aug 6 and restructuring this week as preview (Tue) → drop (Thu), matching the established monthly blog cadence (see Jun 30 → Jul 2).
+> Images: linkedin-fintech-aug4-preview.png, linkedin-fintech-aug6-drop.png, linkedin-dg-aug4-scripts.png, linkedin-dg-aug6-selective.png
+> FORMAT: Publish everything down to "FIRST COMMENT" as the post — NO link in the body. Then paste the FIRST COMMENT line as your first comment right after publishing.
+
+### Tuesday August 4 — FINTECH (blog preview)
+
+New Fintech Frontier post drops Thursday.
+
+I never actually finished telling the Jack Henry / Abrigo story I started a couple weeks back — real integrations don't fail because either platform is bad. They fail in the seam between them.
+
+Ten-plus years running both side by side, and it's the same three seams every time: borrower/account ID matching, GL posting timing, and the handoff between decision, document, and booked loan.
+
+Full breakdown — plus the checklist we run before every integration or re-integration — goes up Thursday on the blog.
+
+If Jack Henry and Abrigo are both part of your stack, worth a follow.
+
+#Abrigo #CommunityBanking #JackHenry #CoreIntegration
+
+**Image:** linkedin-fintech-aug4-preview.png
+**No first comment link** — teaser only, article isn't live yet.
+
+---
+
+### Tuesday August 4 — DIGITAL GROWTH
+
+Every AI script sounds the same. Here's how we avoid that.
+
+Generic prompting produces generic output — the flat, over-explained tone anyone who's used ChatGPT for five minutes can spot immediately. Viewers notice before they can articulate why, and they click away.
+
+Every script in our pipeline goes through a voice pass built from the channel's own back-catalog — its pacing, its recurring phrases, the specific way it opens and closes an episode — before it ever reaches a human editor. AI drafts the structure. The voice pass is what makes it sound like a show instead of a printout.
+
+It's a small extra step. It's also the difference between a channel that keeps viewers and one that trains them to skip.
+
+#YouTubeAutomation #FacelessYouTube #DigitalGrowth #ContentStrategy
+
+**Image:** linkedin-dg-aug4-scripts.png
+
+**FIRST COMMENT** (paste right after publishing):
+See how we build and run channels end to end: advanedgeconsulting.com/digital-growth.html
+
+---
+
+### Thursday August 6 — FINTECH (blog drop — live article)
+
+Jack Henry and Abrigo are both good platforms. The problems I see almost never come from either one individually — they show up in the seam between them.
+
+Ten-plus years running both side by side taught me that seam breaks in the same three places, almost every time: borrower/account ID matching, GL posting timing, and the handoff between decision, document, and booked loan. Most institutions solve two of the three cleanly and quietly live with the third for years — until an audit or a merger needs every number to match.
+
+Wrote up what good actually looks like, plus a short checklist to run before you integrate or re-integrate. Worth 6 minutes if Jack Henry and Abrigo are both part of your stack.
+
+Article in comments ↓
+
+#Abrigo #CommunityBanking #JackHenry #CoreIntegration
+
+**Image:** linkedin-fintech-aug6-drop.png
+
+**FIRST COMMENT** (paste right after publishing):
+Full breakdown here: advanedgeconsulting.com/blog/jack-henry-abrigo-integration.html
+
+---
+
+### Thursday August 6 — DIGITAL GROWTH
+
+We turn away about 1 in 3 people who want to start a channel. Here's why.
+
+Not every niche clears the bar — thin source material, RPM too low to justify the build, or a market already crowded with channels doing it better. Telling someone no upfront is a better outcome for them than six months into a channel that was never going to work.
+
+The people we do take on all have one thing in common: they're building an asset, not chasing a quick win. Passive income YouTube is real, but it rewards patience over hype every time.
+
+If you've had a channel idea sitting in a notes app for a year, happy to tell you honestly whether it clears the bar.
+
+#YouTubeAutomation #FacelessYouTube #DigitalGrowth #PassiveIncome
+
+**Image:** linkedin-dg-aug6-selective.png
+
+**FIRST COMMENT** (paste right after publishing):
+Here's how we evaluate a niche before we build: advanedgeconsulting.com/digital-growth.html
 
 ---
 
@@ -426,10 +555,14 @@ Want the full Executive Brief and the 20-question Readiness Scorecard? Comment "
 | Jul 21 | Tue | Digital Growth | From zero to 1,000 subscribers — real timeline |
 | Jul 23 | Thu | Fintech | The modernization assessment — what it covers |
 | Jul 23 | Thu | Digital Growth | Authority tier — who it's for |
-| Jul 28 | Tue | Fintech | August blog preview |
-| Jul 28 | Tue | Digital Growth | August blog preview |
-| Aug 4 | Tue | Fintech | August blog drop |
-| Aug 4 | Tue | Digital Growth | August blog drop |
+| Jul 28 | Tue | Fintech | 2026 Lending Modernization Playbook — carousel document post |
+| Jul 28 | Tue | Digital Growth | What a done-for-you month actually looks like |
+| Jul 30 | Thu | Fintech | Jack Henry + Abrigo integration blog drop (copy written; article publishes Aug 6 — see note) |
+| Jul 30 | Thu | Digital Growth | Retention vs. subscriber count |
+| Aug 4 | Tue | Fintech | August blog preview — Jack Henry/Abrigo integration seams |
+| Aug 4 | Tue | Digital Growth | Why every AI script sounds the same |
+| Aug 6 | Thu | Fintech | August blog drop — Where Jack Henry and Abrigo Actually Break (live article) |
+| Aug 6 | Thu | Digital Growth | We turn away 1 in 3 potential clients — here's why |
 | Aug 11 | Tue | Fintech | What to ask before hiring a fintech consultant |
 | Aug 11 | Tue | Digital Growth | Channel network update |
 | Aug 18 | Tue | Fintech | Q4 planning — is your Abrigo stack ready? |
