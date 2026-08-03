@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Where Jack Henry and Abrigo Actually Break | Advanedge Consulting</title>
+  <meta name="description" content="Jack Henry and Abrigo are both good platforms. Ten-plus years running them side by side shows the same three integration seams break, almost every time — and what to check before you integrate or re-integrate." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Where Jack Henry and Abrigo Actually Break" />
+  <meta property="og:description" content="The problems almost never come from either platform individually. They show up in the seam between them — in the same three places, almost every time." />
+  <meta property="og:url" content="https://advanedgeconsulting.com/blog/jack-henry-abrigo-integration" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://advanedgeconsulting.com/assets/images/og-fintech.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://advanedgeconsulting.com/assets/images/og-fintech.png" />
+  <link rel="canonical" href="https://advanedgeconsulting.com/blog/jack-henry-abrigo-integration.html" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Where Jack Henry and Abrigo Actually Break",
+    "description": "Jack Henry and Abrigo are both good platforms. Ten-plus years running them side by side shows the same three integration seams break, almost every time — and what to check before you integrate or re-integrate.",
+    "author": { "@type": "Person", "name": "Marvin Tellez" },
+    "publisher": { "@type": "Organization", "name": "Advanedge Consulting", "url": "https://advanedgeconsulting.com" },
+    "datePublished": "2026-08-06",
+    "url": "https://advanedgeconsulting.com/blog/jack-henry-abrigo-integration"
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="../assets/images/logo-advanedge.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+    .blog-hero { background: var(--navy); padding: 120px 40px 80px; text-align: center; }
+    .blog-hero .section-label { margin-bottom: 20px; }
+    .blog-hero-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 48px); color: var(--white); line-height: 1.25; max-width: 840px; margin: 0 auto 24px; }
+    .blog-meta { display: flex; align-items: center; justify-content: center; gap: 24px; font-size: 14px; color: rgba(255,255,255,0.55); flex-wrap: wrap; }
+    .blog-meta span { display: flex; align-items: center; gap: 6px; }
+    .blog-content-wrap { background: #ffffff; }
+    .blog-body { max-width: 780px; margin: 0 auto; padding: 72px 40px 100px; }
+    .blog-body p { font-size: 17px; line-height: 1.85; color: #2a3548; margin-bottom: 24px; }
+    .blog-body h2 { font-family: 'Playfair Display', serif; font-size: clamp(22px, 2.8vw, 30px); color: var(--navy); margin: 56px 0 20px; line-height: 1.3; }
+    .blog-body h3 { font-family: 'Source Sans Pro', sans-serif; font-size: 19px; font-weight: 700; color: var(--navy); margin: 36px 0 12px; }
+    .blog-body ul, .blog-body ol { margin: 0 0 28px 0; padding-left: 24px; }
+    .blog-body li { font-size: 17px; line-height: 1.8; color: #2a3548; margin-bottom: 10px; }
+    .blog-body strong { color: var(--navy); }
+    .blog-callout { background: #f4f6fa; border-left: 4px solid var(--gold); padding: 28px 32px; border-radius: 0 8px 8px 0; margin: 40px 0; }
+    .blog-callout p { margin: 0; font-size: 17px; font-style: italic; color: var(--navy); }
+    .blog-stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 40px 0; }
+    .blog-stat-box { background: var(--navy); border-radius: 10px; padding: 28px 20px; text-align: center; }
+    .blog-stat-box .num { display: block; font-family: 'Playfair Display', serif; font-size: 34px; color: var(--gold); font-weight: 700; margin-bottom: 8px; }
+    .blog-stat-box .label { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.4; }
+    .blog-divider { border: none; border-top: 1px solid #e0e4ed; margin: 56px 0; }
+    .blog-author-box { display: flex; gap: 24px; align-items: flex-start; background: #f4f6fa; border-radius: 12px; padding: 32px; margin: 64px 0 0; }
+    .blog-author-box img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .blog-author-box h4 { font-size: 16px; font-weight: 700; color: var(--navy); margin: 0 0 4px; }
+    .blog-author-box p { font-size: 14px !important; color: #5a6478 !important; margin: 0 !important; line-height: 1.6 !important; }
+    .blog-cta-box { background: var(--navy); border-radius: 16px; padding: 48px 40px; text-align: center; margin: 56px 0 0; }
+    .blog-cta-box h3 { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--white); margin: 0 0 12px; }
+    .blog-cta-box p { color: rgba(255,255,255,0.65) !important; font-size: 16px !important; margin: 0 0 28px !important; }
+    @media (max-width: 700px) {
+      .blog-body { padding: 48px 24px 80px; }
+      .blog-hero { padding: 100px 24px 60px; }
+      .blog-stat-row { grid-template-columns: 1fr; }
+      .blog-author-box { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="announcement-banner">
+    Now Accepting Advisory Engagements for 2026 —
+    <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">Book a Discovery Call</a>
+  </div>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/logo-advanedge.png" alt="Advanedge Consulting logo" />
+      Advanedge Consulting
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#services">Services</a></li>
+      <li><a href="../digital-growth.html">Digital Growth</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#testimonials">Success Stories</a></li>
+      <li><a href="../index.html#blog">Blog</a></li>
+      <li><a href="../index.html#footer">Contact</a></li>
+    </ul>
+    <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener" class="btn-nav">Book a Call</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html#services">Services</a>
+    <a href="../digital-growth.html">Digital Growth</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#testimonials">Success Stories</a>
+    <a href="../index.html#blog">Blog</a>
+    <a href="../index.html#footer">Contact</a>
+    <a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener" class="btn-nav">Book a Call</a>
+  </div>
+
+  <section class="blog-hero">
+    <p class="section-label">Fintech Insights</p>
+    <h1 class="blog-hero-title">Where Jack Henry and Abrigo Actually Break</h1>
+    <div class="blog-meta">
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        6 min read
+      </span>
+      <span>By Marvin Tellez</span>
+      <span>August 6, 2026</span>
+      <span>Core Integration · Abrigo · Jack Henry</span>
+    </div>
+  </section>
+
+  <div class="blog-content-wrap">
+  <article class="blog-body">
+
+    <p>Jack Henry and Abrigo are both good platforms. In ten-plus years of running them side by side across community banks and credit unions, the problems I see almost never come from either one individually. They show up in the seam between them — the handoff points where two well-built systems have to agree on the same borrower, the same number, and the same moment in time.</p>
+
+    <p>That seam breaks in the same three places, almost every time, regardless of asset size or how long the integration has been live. Most institutions solve two of the three cleanly and quietly live with the third for years — until an audit, an exam, or a merger needs every number to match, and the gap stops being quiet.</p>
+
+    <div class="blog-stat-row">
+      <div class="blog-stat-box">
+        <span class="num">3</span>
+        <span class="label">seams that break, almost every time, across every institution size</span>
+      </div>
+      <div class="blog-stat-box">
+        <span class="num">10+ yrs</span>
+        <span class="label">running Jack Henry and Abrigo side by side in production environments</span>
+      </div>
+      <div class="blog-stat-box">
+        <span class="num">2 of 3</span>
+        <span class="label">seams most institutions fix — the third gets lived with for years</span>
+      </div>
+    </div>
+
+    <h2>Why the Seam, Not the Platform</h2>
+
+    <p>Jack Henry's core systems — Silverlake, CIF 20/20, SymXchange — are built to be systems of record for the account. Abrigo/Sageworks is built to be the system of intelligence for the credit decision. Each does what it's designed to do well. The friction shows up because neither platform was built with full visibility into what the other is doing at the exact moment a loan moves from decision to document to booked account, and most middleware connecting them was configured once, years ago, by whoever was in the room at the time.</p>
+
+    <p>That's not a knock on either vendor. It's the nature of any two-system architecture: the seam is always the least-owned part of the stack, because it doesn't belong entirely to either platform's implementation team.</p>
+
+    <h2>The Three Places It Breaks</h2>
+
+    <h3>1. Borrower and Account ID Matching</h3>
+    <p>Abrigo tracks the borrower and the credit relationship. Jack Henry tracks the account and the customer record. When those two identifiers aren't matched on a governed, single source of truth, the same borrower can exist as two slightly different records — one with a middle initial, one without; one under a legal entity name, one under a DBA. Every report that joins across both systems inherits that mismatch, silently, until someone tries to reconcile a portfolio total and the numbers don't tie out.</p>
+
+    <h3>2. GL Posting Timing</h3>
+    <p>Abrigo can finalize a decision and generate booking instructions before Jack Henry's overnight batch has caught up, or vice versa depending on how the integration is scheduled. When the two systems post to the general ledger on different clocks, you get timing differences that look like real discrepancies — a loan that's booked in one system and pending in the other for a window that's supposed to be seconds and is actually hours. Accounting ends up carrying a standing reconciliation item that never fully resolves, just gets explained away every month.</p>
+
+    <h3>3. The Decision → Document → Booked Loan Handoff</h3>
+    <p>This is the seam with the most moving parts: a credit decision made in Abrigo has to trigger the right document set, get the right signatures, and land as a correctly booked account in Jack Henry — without a human re-keying anything in between. When this handoff isn't fully governed, institutions fall back to a manual double-check step "just to be safe," which quietly becomes permanent. That manual step is often the single biggest source of duplicate data entry in the entire lending pipeline.</p>
+
+    <div class="blog-callout">
+      <p>"Most institutions solve two of the three cleanly. The third one gets a workaround instead of a fix — and workarounds don't show up in a system report. They show up three years later, in an audit finding."</p>
+    </div>
+
+    <h2>Why Institutions Live With It for Years</h2>
+
+    <p>None of these three issues fail loudly. A mismatched borrower ID doesn't throw an error — it just quietly produces two records. A GL timing gap doesn't crash a batch job — it just produces a reconciling item someone re-explains every month. The decision-to-booking handoff doesn't stop working — it just accumulates a manual check that nobody remembers wasn't originally part of the process.</p>
+
+    <p>Because none of it breaks visibly, none of it gets prioritized against the work that does. It sits there, absorbed by staff who've built a workaround and stopped thinking of it as a workaround, until a merger, a core conversion, or an exam forces every number in both systems to match at the same time — and the seam that was quietly tolerated for years becomes the thing holding up the timeline.</p>
+
+    <h2>What Good Actually Looks Like</h2>
+
+    <p>A governed integration between Jack Henry and Abrigo treats the seam as its own owned layer, not an afterthought of either implementation. A few things to check before you integrate or re-integrate:</p>
+
+    <ul>
+      <li><strong>One borrower ID standard, enforced at the point of entry.</strong> Not reconciled after the fact — matched before either system creates a new record.</li>
+      <li><strong>A defined posting window, documented and monitored.</strong> Both systems should agree on when a transaction is considered "posted," and that window should be short enough that a timing gap can't be mistaken for a real discrepancy.</li>
+      <li><strong>A single, governed path from decision to booked loan.</strong> If there's a manual double-check step in that path today, that's a signal the automated handoff isn't fully trusted — worth understanding why before the next re-integration.</li>
+      <li><strong>Regular reconciliation, not just at exam time.</strong> A monthly tie-out between Abrigo and Jack Henry on borrower counts, GL postings, and booked-loan volume surfaces drift while it's still small.</li>
+      <li><strong>One owner for the integration itself.</strong> Not "IT owns Jack Henry" and "lending owns Abrigo" — someone accountable for the seam specifically, with visibility into both sides.</li>
+    </ul>
+
+    <h2>This Isn't a Core-vs-LOS Problem</h2>
+
+    <p>Abrigo gives your institution a powerful decisioning and portfolio management platform. Jack Henry gives you a solid core of record. Neither needs to be replaced to fix any of this — the fix lives in the integration layer between them, and it's usually a matter of weeks, not a re-platform.</p>
+
+    <p>If Jack Henry and Abrigo are both part of your stack, the question worth asking isn't whether the seam is causing a problem today. It's which of the three you've already quietly solved, and which one you're still explaining every month.</p>
+
+    <hr class="blog-divider" />
+
+    <div class="blog-author-box">
+      <img src="../assets/images/headshot-marvin-tellez.jpg" alt="Marvin Tellez" />
+      <div>
+        <h4>Marvin Tellez — Founder, Advanedge Consulting</h4>
+        <p>Marvin is a fintech strategy leader with 26 years inside financial institutions and deep operator-level experience across the Abrigo/Sageworks ecosystem — including LOS implementation, Jack Henry integration, and AI-enabled lending operations. Based in Dallas-Fort Worth, he helps community banks and credit unions get the most out of their lending technology nationwide.</p>
+      </div>
+    </div>
+
+    <div class="blog-cta-box">
+      <h3>Running Jack Henry and Abrigo Together?</h3>
+      <p>The Modernization Assessment includes a full integration audit — mapping exactly where your core, LOS, and document systems agree and where they don't.</p>
+      <a href="../services/lending-modernization-assessment.html" class="btn-primary">See the Modernization Assessment</a>
+    </div>
+
+  </article>
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <img src="../assets/images/logo-advanedge.png" alt="Advanedge logo" />
+          Advanedge Consulting
+        </div>
+        <p class="footer-tagline">Fintech Advisory for Community Banks &amp; Credit Unions</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="../index.html#how-we-work">RFP Advisory</a></li>
+          <li><a href="../index.html#how-we-work">Implementation Advisory</a></li>
+          <li><a href="../index.html#how-we-work">Post-Implementation</a></li>
+          <li><a href="../index.html#services">AI Enablement</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#blog">Blog</a></li>
+          <li><a href="mailto:info@advanedgeconsulting.com">Contact</a></li>
+          <li><a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">Book a Call</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <div><a href="mailto:info@advanedgeconsulting.com">info@advanedgeconsulting.com</a></div>
+          <div><a href="https://www.advanedgeconsulting.com" target="_blank" rel="noopener">www.advanedgeconsulting.com</a></div>
+          <div><a href="https://calendly.com/marvin-advanedge/call" target="_blank" rel="noopener">calendly.com/marvin-advanedge/call</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Advanedge Consulting. All rights reserved.</span>
+      <div>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../legal-notice.html">Legal Notice</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
